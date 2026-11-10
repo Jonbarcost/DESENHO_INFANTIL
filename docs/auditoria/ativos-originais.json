@@ -1,0 +1,574 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 143,
+    "sha256": "2e54430eec300d26de2c1384b454385039df0b096f8b6af6e1c3a522705a45dc"
+  },
+  {
+    "path": "EPISODIO_01/CENAS/animacao_teste.blend",
+    "bytes": 2302728,
+    "sha256": "d8a522e855e74c5ca1dcfbcc147a0acb8d8e5b4f04ee38554a2ae1a93aa028dc"
+  },
+  {
+    "path": "EPISODIO_01/CENAS/clareira_3d.blend",
+    "bytes": 1055744,
+    "sha256": "683b0feb97af94276104e054c0458196b96cfdd60f3bc413d4f978d3fc8ff60b"
+  },
+  {
+    "path": "EPISODIO_01/CENAS/clareira_3d_backup.blend",
+    "bytes": 1055744,
+    "sha256": "683b0feb97af94276104e054c0458196b96cfdd60f3bc413d4f978d3fc8ff60b"
+  },
+  {
+    "path": "EPISODIO_01/CENAS/clareira_melhorada.blend",
+    "bytes": 1508272,
+    "sha256": "0f6ac44eeab86fda10e8b47cf6a0168c21dc96fcd83a3e7a7f5d95b1095f7f3a"
+  },
+  {
+    "path": "EPISODIO_01/CENAS/episodio_01_animado.blend",
+    "bytes": 2461880,
+    "sha256": "0432df3045a8dabe10b142134547e5f3149bc89da2e36df47a30bbe8d2d7a7b6"
+  },
+  {
+    "path": "EPISODIO_01/CENAS/personagens.blend",
+    "bytes": 2172924,
+    "sha256": "097d69c61a6d64dd1579d5952ddebc1cf83529a8d3e9446001ec8ad2b49f3e0b"
+  },
+  {
+    "path": "EPISODIO_01/EXPORTACAO/episodio_01_audio.mp3",
+    "bytes": 1209408,
+    "sha256": "820cf2961ea9c453240bf4b9fbf0f88bf2efb817f3290ccb5b8bb27daa8472ee",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "50.364082",
+        "tags": {
+          "encoder": "Lavf63.1.102"
+        }
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/EXPORTACAO/previa_ambientada.mp3",
+    "bytes": 1209408,
+    "sha256": "c62943a50a2022c50716c2eb5a4a1d48ff440d2603c32ad49fcda1baf439b5ca",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "50.364082",
+        "tags": {
+          "encoder": "Lavf63.1.102"
+        }
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/EXPORTACAO/previa_vozes.mp3",
+    "bytes": 1209408,
+    "sha256": "1370604b6ea0059c1fa18935ebb7ccd2e730ff5b4fac43d6ef4e4af38e0dc22e",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "50.364082",
+        "tags": {
+          "encoder": "Lavf63.1.102"
+        }
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/MUSICAS/tema_clareira.mp3",
+    "bytes": 1327899,
+    "sha256": "b96680c9d1c509b1d1f283e9c324930f5be8f81420b3cc3b149e34ef57b99b86",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "44100",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "55.301224",
+        "tags": {
+          "encoder": "Lavf63.1.102"
+        }
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/ROTEIRO/episodio_01.txt",
+    "bytes": 988,
+    "sha256": "ad9e3a059872f02db1f434dc04e4dcd92b0b78bd7dab6b1c2764601298b80eae"
+  },
+  {
+    "path": "EPISODIO_01/ROTEIRO/tempos_falas.csv",
+    "bytes": 596,
+    "sha256": "c75a8041321a14735cf10ac737ebeba757c7363c3e6de70ca22f93e4c7719bef"
+  },
+  {
+    "path": "EPISODIO_01/VOZES/capi.mp3",
+    "bytes": 34560,
+    "sha256": "f5e65a0fec46b1f2053bee352961142a0f9c0711385bb177df49f184de5f1137",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.760000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_01_001_narradora.mp3",
+    "bytes": 33984,
+    "sha256": "25d78aa10d9d06d22864140978377b2cbcfcc956f98dffda458237931914314d",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.664000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_02_002_capi.mp3",
+    "bytes": 31680,
+    "sha256": "7f4af775d7a01ced9f11a16a5db5b81884f9381616343f681d76d67c953156b1",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.280000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_02_003_teco.mp3",
+    "bytes": 22752,
+    "sha256": "6519512801b7c50bd1084a4567f4a88482d26e2e5f4dff590ec8308280d14251",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "3.792000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_02_004_maya.mp3",
+    "bytes": 13824,
+    "sha256": "ea2cfcabae9f061beea1782bc7a62eeb32173d382ab1ab391271990282b06df3",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "2.304000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_03_005_capi.mp3",
+    "bytes": 12384,
+    "sha256": "6d2353d2d1e4f7c8d0f8f18e412b0830842aad4cbf61b8d5e5382a51029ad7e3",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "2.064000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_03_006_maya.mp3",
+    "bytes": 22896,
+    "sha256": "d10a86e6b5b6956d9924f944747473c62209906689969b69f902ef7f58c67cd8",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "3.816000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_03_007_teco.mp3",
+    "bytes": 12960,
+    "sha256": "f1555fcc23a74ccc27b02b4fcd9abdb09ddd44372dc274008fefc9ed8e816a67",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "2.160000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_05_008_narradora.mp3",
+    "bytes": 23328,
+    "sha256": "30fa735816a4b25f0458c45f130f44a713eb4bf3f4193eeecbaa56e2fab48d81",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "3.888000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_05_009_teco.mp3",
+    "bytes": 19008,
+    "sha256": "a57b2e490bdbfcbf14ec0ea34e48df7e77c80b319c6b2128d753e1a95d8e4f21",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "3.168000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_05_010_capi.mp3",
+    "bytes": 11232,
+    "sha256": "0fd6517597f408831768b994681b6d184768b221e74c8a43f457bb217510737e",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "1.872000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_05_011_maya.mp3",
+    "bytes": 23904,
+    "sha256": "f1a036f8e76554e549e1766741c63583b433b10d5f9bcc12684e32707d74a4bd",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "3.984000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/cena_06_012_narradora.mp3",
+    "bytes": 30816,
+    "sha256": "a3d9c7d466e5a47c57249cbf6ae760c3264cbcb2da6805fbe9a411cc3e3ced2c",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.136000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/maya.mp3",
+    "bytes": 27936,
+    "sha256": "3405cbd22e8e9b338838bbc4eb3f148beddbe9fe33d219dc58e862f4dbf5345d",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "4.656000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/narradora_v2.mp3",
+    "bytes": 34272,
+    "sha256": "e193205aea564d43db8db0a8514522a88784161d596914f459c586df52e14e7a",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.712000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/VOZES/teco.mp3",
+    "bytes": 37728,
+    "sha256": "dc64214be3d67aa8ca6b404849a2c27f527214bac30cf4455c7414579bdc4b58",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "6.288000"
+      }
+    }
+  },
+  {
+    "path": "EPISODIO_01/gerar_vozes.py",
+    "bytes": 1421,
+    "sha256": "7e36c24f7af6bde6c36d37b5aaa8a18371fc72b54f6723d5a68d632f9c9af15e"
+  },
+  {
+    "path": "README.md",
+    "bytes": 18,
+    "sha256": "15ada2ae284173e07233a9dc7c615b9da1572cb1b9df01094797cea91b58bbbb"
+  },
+  {
+    "path": "animar.py",
+    "bytes": 1652,
+    "sha256": "2d922bc701c2aad364aea39f927edf95b298121169c1226a1da05b2ba02aef48"
+  },
+  {
+    "path": "animar_episodio.py",
+    "bytes": 3371,
+    "sha256": "bf7d7df42c4091f2fa8f99eea62e36cf4379b044fd66cb4f247b820e8d072e38"
+  },
+  {
+    "path": "capi.mp3",
+    "bytes": 34560,
+    "sha256": "f5e65a0fec46b1f2053bee352961142a0f9c0711385bb177df49f184de5f1137",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.760000"
+      }
+    }
+  },
+  {
+    "path": "criar_cena.py",
+    "bytes": 2791,
+    "sha256": "d2ea8c382d3aaa27388484d0a59e92640562975399a14fa59c7944cff72f9036"
+  },
+  {
+    "path": "maya.mp3",
+    "bytes": 27936,
+    "sha256": "3405cbd22e8e9b338838bbc4eb3f148beddbe9fe33d219dc58e862f4dbf5345d",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "4.656000"
+      }
+    }
+  },
+  {
+    "path": "melhorar_cena.py",
+    "bytes": 2809,
+    "sha256": "05ab70e6c0a145aae6d734ac9e5b543cbf1d9fe616d22f5ec49acd01fbc6aa3e"
+  },
+  {
+    "path": "montar_episodio.py",
+    "bytes": 1153,
+    "sha256": "d258a56ac4259ccc99ee3b326319cb932a5f01a0bee14115e45db6c85f53183b"
+  },
+  {
+    "path": "narradora_teste.mp3",
+    "bytes": 43344,
+    "sha256": "5baf5f475c7c3a2a8ef6d001f6112d6097f13bcd9f9908e9ce9c05fd79e7737d",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "7.224000"
+      }
+    }
+  },
+  {
+    "path": "narradora_v2.mp3",
+    "bytes": 34272,
+    "sha256": "e193205aea564d43db8db0a8514522a88784161d596914f459c586df52e14e7a",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.712000"
+      }
+    }
+  },
+  {
+    "path": "personagens.py",
+    "bytes": 2202,
+    "sha256": "4fa5e689e1afadd28264483fc48ceb74c87dc4395bdc922f6ac81b3db7932e11"
+  },
+  {
+    "path": "teco.mp3",
+    "bytes": 37728,
+    "sha256": "dc64214be3d67aa8ca6b404849a2c27f527214bac30cf4455c7414579bdc4b58",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "6.288000"
+      }
+    }
+  }
+]
