@@ -1,0 +1,31 @@
+{
+  "blender": "Blender 4.3.2",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "python": "3.12.14",
+  "cpu_quota": "400000 100000",
+  "disk_free_bytes": 54970789888,
+  "render_engine": "BLENDER_WORKBENCH",
+  "render_width": 1920,
+  "fps": 12,
+  "voices": "Kokoro local pt-br: perfis do Episódio 02",
+  "network": "Edge bloqueado no ambiente anterior; reutilizados modelos locais verificados. Nenhum controle alterado.",
+  "original_scene": "EPISODIO_01/CENAS/personagens.blend",
+  "new_models": [
+    "riacho procedural",
+    "folha",
+    "peixe",
+    "sapo",
+    "pinça e luva",
+    "saco de coleta"
+  ],
+  "reuse": [
+    "Capi",
+    "Teco",
+    "Maya",
+    "árvores",
+    "clareira",
+    "flores",
+    "perfis de voz locais",
+    "música matemática e pipeline"
+  ]
+}

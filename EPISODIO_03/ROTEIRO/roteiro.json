@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "episode": "03",
+  "title": "O Segredo do Riachinho",
+  "series": "Clareira dos Curiosos",
+  "fps": 12,
+  "target_duration": [
+    180,
+    300
+  ],
+  "render_width": 1920,
+  "voices": {
+    "CAPI": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+12%",
+      "pitch": "+15Hz"
+    },
+    "TECO": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+22%",
+      "pitch": "+35Hz"
+    },
+    "MAYA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+8%",
+      "pitch": "+18Hz"
+    },
+    "NARRADORA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+5%",
+      "pitch": "+5Hz"
+    }
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "Um som de água",
+      "min_duration": 25,
+      "mode": "intro",
+      "dialogue": [
+        {
+          "id": "03_01_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "Depois da aventura no jardim, um som diferente chamou os amigos. Era água correndo pertinho da clareira.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_01_02_capi",
+          "speaker": "CAPI",
+          "text": "Estão ouvindo? Parece uma canção de chuvisco!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_01_03_teco",
+          "speaker": "TECO",
+          "text": "Será uma torneira que aprendeu a cantar?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_01_04_maya",
+          "speaker": "MAYA",
+          "text": "Vamos descobrir! Mas perto da água, só com um adulto e sem entrar.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_01_05_narradora",
+          "speaker": "NARRADORA",
+          "text": "Com a companhia de um adulto, eles seguiram pela trilha, devagar e longe da beirada.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_01_06_capi",
+          "speaker": "CAPI",
+          "text": "Olhos atentos, pés na trilha. Nossa aventura vai começar!",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "title": "O riacho em movimento",
+      "min_duration": 29,
+      "mode": "discovery",
+      "dialogue": [
+        {
+          "id": "03_02_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "Entre as árvores apareceu um riachinho. A água passava pelas pedras, fazendo pequenas curvas.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_02_02_teco",
+          "speaker": "TECO",
+          "text": "Olha! A água nunca fica parada! Será que ela está com pressa?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_02_03_maya",
+          "speaker": "MAYA",
+          "text": "Ela está descendo. A água corre dos lugares mais altos para os mais baixos.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_02_04_capi",
+          "speaker": "CAPI",
+          "text": "Como quando uma bolinha desce uma rampa?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_02_05_maya",
+          "speaker": "MAYA",
+          "text": "Isso! A gravidade puxa a água para baixo. Por isso ela segue seu caminho.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_02_06_teco",
+          "speaker": "TECO",
+          "text": "Então a água não tem motor! Tem um caminho de descida!",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "chase",
+      "title": "A viagem da folhinha",
+      "min_duration": 30,
+      "mode": "chase",
+      "dialogue": [
+        {
+          "id": "03_03_01_capi",
+          "speaker": "CAPI",
+          "text": "Uma folha caiu da árvore e já está boiando. Vamos observar daqui!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_03_02_narradora",
+          "speaker": "NARRADORA",
+          "text": "Sem colocar nada na água, os amigos acompanharam com os olhos a folha que passava.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_03_03_teco",
+          "speaker": "TECO",
+          "text": "Lá vai o barquinho de folha! Virou para a direita, depois para a esquerda!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_03_04_maya",
+          "speaker": "MAYA",
+          "text": "A correnteza leva a folha. Ela ajuda a mostrar para onde a água está indo.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_03_05_teco",
+          "speaker": "TECO",
+          "text": "Vou fazer uma curva também! Opa! Meus pés preferem a trilha!",
+          "pause_after": 0.8,
+          "event": "stumble"
+        },
+        {
+          "id": "03_03_06_capi",
+          "speaker": "CAPI",
+          "text": "Devagar, Teco! Observar também é uma aventura.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_03_07_narradora",
+          "speaker": "NARRADORA",
+          "text": "A folha seguiu viagem, enquanto os três continuaram seguros na margem seca.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "title": "Quem mora por aqui?",
+      "min_duration": 29,
+      "mode": "investigate",
+      "dialogue": [
+        {
+          "id": "03_04_01_teco",
+          "speaker": "TECO",
+          "text": "Vi uma coisa mexendo! A folha ganhou um rabinho?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_04_02_capi",
+          "speaker": "CAPI",
+          "text": "É um peixinho! Ele nada mexendo o corpo e a cauda.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_04_03_maya",
+          "speaker": "MAYA",
+          "text": "O riacho é a casa dele. Muitos seres vivos precisam da água para viver.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_04_04_narradora",
+          "speaker": "NARRADORA",
+          "text": "Na margem, um sapinho respondeu com um coaxar. Os amigos ficaram quietinhos para escutar.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_04_05_teco",
+          "speaker": "TECO",
+          "text": "Coax, coax! Será que ele entendeu meu bom dia?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_04_06_maya",
+          "speaker": "MAYA",
+          "text": "Podemos observar sem pegar os animais. Assim eles continuam tranquilos na sua casa.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_04_07_capi",
+          "speaker": "CAPI",
+          "text": "Peixinho na água, sapinho na margem. Cada um tem seu jeitinho de viver!",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "title": "Transparente não quer dizer potável",
+      "min_duration": 33,
+      "mode": "garden",
+      "dialogue": [
+        {
+          "id": "03_05_01_teco",
+          "speaker": "TECO",
+          "text": "A água parece tão limpinha! Posso beber um golinho?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_05_02_maya",
+          "speaker": "MAYA",
+          "text": "Não, Teco. Água transparente nem sempre é própria para beber.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_05_03_capi",
+          "speaker": "CAPI",
+          "text": "Mas eu consigo até ver as pedrinhas! O que pode ter nela?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_05_04_maya",
+          "speaker": "MAYA",
+          "text": "Pode haver micróbios tão pequenos que nossos olhos não conseguem enxergar. Alguns fazem mal.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_05_05_narradora",
+          "speaker": "NARRADORA",
+          "text": "Para beber, precisamos de água potável, de uma fonte segura, com orientação de um adulto.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_05_06_teco",
+          "speaker": "TECO",
+          "text": "Entendi! Vou beber a água da minha garrafinha, que trouxemos de casa.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_05_07_capi",
+          "speaker": "CAPI",
+          "text": "E essas raízes perto da margem? Parecem vários dedinhos segurando a terra!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_05_08_maya",
+          "speaker": "MAYA",
+          "text": "As raízes ajudam a segurar o solo. Por isso vamos proteger as plantas daqui.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "care",
+      "title": "Uma margem bem cuidada",
+      "min_duration": 32,
+      "mode": "care",
+      "dialogue": [
+        {
+          "id": "03_06_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "Na trilha seca havia papéis esquecidos. Com ajuda de um adulto, luvas e uma pinça, Capi recolheu os papéis.",
+          "pause_after": 0.8,
+          "event": "cleanup"
+        },
+        {
+          "id": "03_06_02_capi",
+          "speaker": "CAPI",
+          "text": "Este papel vai para o saco de coleta. Nada de lixo no riacho!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_06_03_teco",
+          "speaker": "TECO",
+          "text": "Eu seguro o saco longe da água. Trabalho em equipe!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_06_04_maya",
+          "speaker": "MAYA",
+          "text": "Se encontrar vidro, objetos cortantes ou algo desconhecido, não toque. Avise um adulto.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_06_05_narradora",
+          "speaker": "NARRADORA",
+          "text": "Os papéis foram guardados para o descarte correto. Ninguém entrou na água nem arrancou plantas.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_06_06_capi",
+          "speaker": "CAPI",
+          "text": "Cuidar da margem ajuda a proteger a casa dos animais.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_06_07_maya",
+          "speaker": "MAYA",
+          "text": "E recolher lixo não transforma a água do riacho em água potável. Lembram?",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "finale",
+      "title": "O segredo que vamos guardar",
+      "min_duration": 29,
+      "mode": "finale",
+      "dialogue": [
+        {
+          "id": "03_07_01_teco",
+          "speaker": "TECO",
+          "text": "Lembro! Água para beber precisa ser segura. E o riacho merece cuidado!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_07_02_capi",
+          "speaker": "CAPI",
+          "text": "Descobrimos correnteza, peixinhos e raízes que seguram a terra!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_07_03_maya",
+          "speaker": "MAYA",
+          "text": "Quando observamos com carinho, a natureza ensina muitas coisas.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_07_04_narradora",
+          "speaker": "NARRADORA",
+          "text": "O riacho continuou sua canção. Os amigos se despediram sem deixar nenhum lixo para trás.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_07_05_teco",
+          "speaker": "TECO",
+          "text": "Tchau, sapinho! Coax, coax! Até a próxima descoberta!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_07_06_capi",
+          "speaker": "CAPI",
+          "text": "Olhem aquelas nuvens! Será que a água também passeia pelo céu?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "03_07_07_maya",
+          "speaker": "MAYA",
+          "text": "Esse é um mistério para a nossa próxima aventura. Até lá, curiosos!",
+          "pause_after": 0.8
+        }
+      ]
+    }
+  ]
+}
