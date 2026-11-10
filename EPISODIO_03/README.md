@@ -25,3 +25,5 @@ Os relatórios verificam formato, duração, decodificação integral, falas e i
 ## Próxima aventura
 
 O gancho propõe **A Viagem da Gotinha**, introduzindo evaporação, nuvens e chuva. Copie o esquema de roteiro para EPISODIO_04, mantenha os perfis de voz e adapte a cena para os fenômenos do novo episódio. Não reutilize uma cena pronta para uma história diferente sem adaptar ações e controle de qualidade.
+
+No Windows: execute `EPISODIO_03\produzir_windows.cmd`. O lançador instala dependências gratuitas em ambiente local e verifica os modelos antes de usá-los. Para renderizar a partir do pacote editável, use `EPISODIO_03\produzir_windows.cmd --output EPISODIO_03/RENDER_WINDOWS`, pois os masters e PNGs são regenerados. Lançador preparado, sem teste nativo no Windows.
