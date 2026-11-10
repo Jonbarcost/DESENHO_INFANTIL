@@ -1,0 +1,28 @@
+{
+  "completed": true,
+  "downloads": [
+    {
+      "file": "episodio_03_final.mp4",
+      "http_status": 200,
+      "bytes": 58281012,
+      "sha256": "9af7f089014652b18fbaf846d8cb76f2c03e529b5563114e36fdab716b7af2b2",
+      "verified": true
+    },
+    {
+      "file": "episodio_03_leve.mp4",
+      "http_status": 200,
+      "bytes": 15396402,
+      "sha256": "7edbc77327fbc2fc33ac043b2918c9d18bfbe7a1386a7c6bb5749dc1579dee65",
+      "verified": true
+    },
+    {
+      "file": "Clareira_Episodio03_Projeto.zip",
+      "http_status": 200,
+      "bytes": 79341642,
+      "sha256": "ecc0cd6808f8e7c7f1e880482de9bd9158628e8b32ded61a9985d88fbb1e2e3e",
+      "verified": true
+    }
+  ],
+  "project_zip_entries": 274,
+  "project_zip_crc": "passed"
+}
