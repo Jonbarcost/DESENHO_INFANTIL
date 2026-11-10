@@ -65,9 +65,12 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--tts',choices=['auto','edge','kokoro'],default='kokoro')
     p.add_argument('--width',choices=[1280,1920],type=int,default=1920)
+    p.add_argument('--output',type=Path,default=Path('EPISODIO_02/ARTEFATOS'))
     a=p.parse_args()
     if os.name!='nt':raise RuntimeError('Este lançador destina-se ao Windows; no Linux use python3 -m producao.serie.')
-    out=ROOT/'EPISODIO_02/ARTEFATOS';final=out/'episodio_02_final.mp4'
+    out=(ROOT/a.output).resolve();final=out/'episodio_02_final.mp4'
+    if ROOT not in out.parents or any(out==p or p in out.parents for p in (ROOT/'EPISODIO_01',ROOT/'build/episodio_01')):
+        raise ValueError('Use uma pasta nova do Episódio 02 dentro do projeto.')
     if final.exists() and (out/'validation.json').exists() and (out/'render-config.json').exists():
         report=json.loads((out/'validation.json').read_text(encoding='utf-8'))
         config=json.loads((out/'render-config.json').read_text(encoding='utf-8'))
@@ -98,7 +101,7 @@ def main():
         for name in CHECKSUMS:download_model(name,ROOT/'build/tts-models'/name)
     manifest=windows_preservation()
     run([python,'-m','producao.serie','EPISODIO_02/ROTEIRO/roteiro.json',
-         '--tts',a.tts,'--width',a.width,'--preservation-manifest',manifest],env)
+         '--tts',a.tts,'--width',a.width,'--output',out,'--preservation-manifest',manifest],env)
 
 
 if __name__=='__main__':

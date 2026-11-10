@@ -1,6 +1,6 @@
 {
   "completed": false,
-  "blocker": "Edge TTS HTTP 403 via proxy: speech.platform.bing.com",
+  "blocker": null,
   "config_edit": "Draft read failed twice with INVALID_ARGUMENT; no network change saved",
   "script_lines": 44,
   "planned_duration": 219.8333333333,
@@ -12,12 +12,18 @@
     "silent": true,
     "provisional": true
   },
-  "tests_passed": 17,
+  "tests_passed": 22,
   "preserved_files": 940,
-  "valid_new_voices": 0,
+  "valid_new_voices": 44,
   "full_render": false,
   "final_mix": false,
   "final_mp4": false,
   "published": false,
-  "next_command": "python3 -m producao.serie EPISODIO_02/ROTEIRO/roteiro.json"
+  "next_command": "python3 -m producao.serie EPISODIO_02/ROTEIRO/roteiro.json",
+  "phase": "rendering",
+  "voice_backend": "kokoro-local-pt-br",
+  "actual_duration": 224.5833333333,
+  "actual_frames": 2695,
+  "windows_command": "EPISODIO_02\\produzir_windows.cmd",
+  "history": "Edge continuou bloqueado; alternativa local gratuita autorizada na continuação."
 }
