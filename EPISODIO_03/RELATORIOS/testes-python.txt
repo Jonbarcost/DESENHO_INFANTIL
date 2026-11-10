@@ -9,6 +9,9 @@ test_equals_destination_and_old_story_rejected (test_riacho.Riacho.test_equals_d
 test_import_has_no_pipeline_side_effects (test_riacho.Riacho.test_import_has_no_pipeline_side_effects) ... ok
 test_previous_production_preserved (test_riacho.Riacho.test_previous_production_preserved) ... ok
 test_story_education_and_safety (test_riacho.Riacho.test_story_education_and_safety) ... ok
+test_mobile_copy_bound_to_source_and_exact_bytes (test_riacho_delivery.Delivery.test_mobile_copy_bound_to_source_and_exact_bytes) ... ok
+test_wrong_source_or_unverified_copy_rejected (test_riacho_delivery.Delivery.test_wrong_source_or_unverified_copy_rejected) ... ok
+test_windows_and_linux_dispatch_to_same_episode_builder (test_riacho_delivery.PortablePaths.test_windows_and_linux_dispatch_to_same_episode_builder) ... ok
 test_duplicate_line_ids_are_rejected (test_serie.SeriesTests.test_duplicate_line_ids_are_rejected) ... ok
 test_external_output_is_rejected_before_work_starts (test_serie.SeriesTests.test_external_output_is_rejected_before_work_starts) ... ok
 test_final_requires_every_voice (test_serie.SeriesTests.test_final_requires_every_voice) ... ok
@@ -27,6 +30,6 @@ test_resume_rejects_manually_edited_scene_and_timeline (test_validation.ExportVa
 test_true_peak_and_loudness_are_acceptance_checks (test_validation.ExportValidationTests.test_true_peak_and_loudness_are_acceptance_checks) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 10.865s
+Ran 30 tests in 18.987s
 
 OK

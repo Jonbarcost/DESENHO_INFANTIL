@@ -1,0 +1,7 @@
+{
+  "linux_commands_unchanged": true,
+  "windows_path_conversion_tested": true,
+  "native_windows_execution_tested": false,
+  "only_source_changed": "producao/riacho/pipeline.py",
+  "scene_audio_and_other_sources_unchanged": true
+}

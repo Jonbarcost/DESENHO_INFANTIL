@@ -19,3 +19,12 @@ class Delivery(unittest.TestCase):
     broken={**r,key:value};(out/'leve-validation.json').write_text(json.dumps(broken))
     with self.assertRaises(AssertionError):check_light(out,qa)
 if __name__=='__main__':unittest.main()
+
+class PortablePaths(unittest.TestCase):
+ def test_windows_and_linux_dispatch_to_same_episode_builder(self):
+  from producao.riacho.pipeline import adapt_command
+  from producao.serie.pipeline import ROOT
+  for name in ('cena.py','qa_cena.py'):
+   expected=str(ROOT/'producao/riacho'/name)
+   self.assertEqual(adapt_command([ROOT/'producao/serie'/name]),[expected])
+   self.assertEqual(adapt_command(['C:\\Projeto com espaços\\producao\\serie\\'+name]),[expected])

@@ -3,6 +3,17 @@ from pathlib import Path
 import sys,os
 from producao.serie import pipeline as p
 
+def adapt_command(cmd):
+    replacements={'producao/serie/cena.py':'producao/riacho/cena.py','producao/serie/qa_cena.py':'producao/riacho/qa_cena.py'}
+    result=[]
+    for arg in cmd:
+        value=str(arg);normalized=value.replace(chr(92),'/')
+        for source,target in replacements.items():
+            if normalized==source or normalized.endswith('/'+source):
+                value=str(p.ROOT/target);break
+        result.append(value)
+    return result
+
 def main():
     # Parse exactly as argparse, including --output=path and abbreviations.
     import argparse
@@ -20,7 +31,7 @@ def main():
     audio.compose=compose
     original_run=p.run
     def run(cmd,log):
-        cmd=[str(x).replace('producao/serie/cena.py','producao/riacho/cena.py').replace('producao/serie/qa_cena.py','producao/riacho/qa_cena.py') for x in cmd]
+        cmd=adapt_command(cmd)
         original_run(cmd,log)
     original_fingerprint=p.fingerprint
     def fingerprint(*args):
