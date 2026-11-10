@@ -32,6 +32,11 @@ def main():
    v=world_to_camera_view(s,s.camera,bpy.data.objects['EP4_Nuvem'].matrix_world.translation)
    if not (.12<v.x<.88 and .12<v.y<.88 and v.z>0):raise ValueError('Nuvem fora do enquadramento')
    inserts.append(dict(shot=shot['name'],uv=[v.x,v.y]))
- report=dict(checks='passed',visibility=seen,foot_range=max(feet)-min(feet),arm_range=max(arms)-min(arms),walk_range=max(positions)-min(positions),puddle_range=max(puddles)-min(puddles),flower_range=max(flowers)-min(flowers),mouth_checks=mouth,diagram_checks=inserts,camera_markers=len([m for m in s.timeline_markers if m.camera]))
+ cuts=[]
+ for shot in json.loads((out/'shots.json').read_text()):
+  f=round(shot['start']*t['fps'])+1;s.frame_set(f);expected=1 if shot['kind']=='diagram' else .001
+  if abs(bpy.data.objects['EP4_Modelo'].scale.x-expected)>.001:raise ValueError('Modelo desalinhado com corte '+shot['name'])
+  cuts.append(f)
+ report=dict(cut_checks=cuts,checks='passed' ,visibility=seen,foot_range=max(feet)-min(feet),arm_range=max(arms)-min(arms),walk_range=max(positions)-min(positions),puddle_range=max(puddles)-min(puddles),flower_range=max(flowers)-min(flowers),mouth_checks=mouth,diagram_checks=inserts,camera_markers=len([m for m in s.timeline_markers if m.camera]))
  (out/'scene-qa.json').write_text(json.dumps(report,indent=2));print('SCENE_QA_PASSED',len(inserts),len(mouth),flush=True)
 if __name__=='__main__':main()

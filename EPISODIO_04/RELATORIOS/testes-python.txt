@@ -34,6 +34,6 @@ test_resume_rejects_manually_edited_scene_and_timeline (test_validation.ExportVa
 test_true_peak_and_loudness_are_acceptance_checks (test_validation.ExportValidationTests.test_true_peak_and_loudness_are_acceptance_checks) ... ok
 
 ----------------------------------------------------------------------
-Ran 34 tests in 12.498s
+Ran 34 tests in 14.187s
 
 OK

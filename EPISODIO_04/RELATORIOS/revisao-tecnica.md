@@ -8,3 +8,5 @@ Correções de achados importantes:
 - Pacote: ZIP é produzido com nome temporário, conferido e promovido atomicamente. Publicação exige relatório com SHA correspondente ao filme aprovado e ao ZIP, abre o arquivo, verifica CRC e recursos obrigatórios.
 
 Ajuste de enquadramento pré-render: modelos de nuvens só aparecem nas inserções educativas. A chuva de fundo fica distante dos personagens. Testes e poses iniciais foram arquivados, sem exclusão nem renderização completa repetida.
+
+Correção durante os lotes iniciais: teste real de corte falhou no quadro 947 (modelo atrasava um quadro). Visibilidade agora usa os mesmos quadros arredondados dos marcadores de câmera, em vez de comparar segundos contínuos. Novo teste passou nos 49 cortes e passou a integrar o QA obrigatório de cena. Comparação exata do Workbench comprovou 856 estados equivalentes (quadros 1–840 mais poses existentes), incluindo todos os renders concluídos; zero quadro foi descartado/repetido. Checkpoint atualizado após essa prova. A alteração afeta apenas estados posteriores de transição do modelo; áudio, personagens, geometria, cores e recursos anteriores permanecem iguais.

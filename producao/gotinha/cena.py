@@ -104,7 +104,7 @@ def build(t,out,width=1920,engine='BLENDER_WORKBENCH'):
    shots.append(dict(name=name,start=time,end=end,camera=cam.name,kind=kind))
  s.camera=bpy.data.objects[shots[0]['camera']]
  for f in range(1,t['frames']+1):
-  seconds=(f-1)/t['fps'];current_shot=next(x for x in shots if x['start']<=seconds<x['end']);board.scale=(1 if current_shot['kind']=='diagram' else .001,)*3;key(board,'scale',f)
+  seconds=(f-1)/t['fps'];current_shot=next(x for x in reversed(shots) if round(x['start']*t['fps'])+1<=f);board.scale=(1 if current_shot['kind']=='diagram' else .001,)*3;key(board,'scale',f)
   active=next((c for c in t['dialogue'] if c['start']<=seconds<c['end']),None)
   interaction=next((c for c in t['dialogue'] if c.get('event') and c['end']<=seconds<c['end']+c.get('pause_after',.8)),None)
   game=next((c for c in t['dialogue'] if c.get('event')=='rain_game' and c['start']<=seconds<c['end']+c['pause_after']),None)
