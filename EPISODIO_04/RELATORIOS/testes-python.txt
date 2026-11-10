@@ -3,6 +3,7 @@ test_portable_dispatch (test_gotinha.GotinhaTests.test_portable_dispatch) ... ok
 test_previous_destinations_and_story_rejected (test_gotinha.GotinhaTests.test_previous_destinations_and_story_rejected) ... ok
 test_script_has_real_response_pauses_and_science (test_gotinha.GotinhaTests.test_script_has_real_response_pauses_and_science) ... ok
 test_interrupted_zip_is_rejected_before_upload (test_gotinha_delivery.ProjectGate.test_interrupted_zip_is_rejected_before_upload) ... ok
+test_actual_episode_adapter_encodes_visible_science_and_turn_labels (test_gotinha_overlay.OverlayIntegration.test_actual_episode_adapter_encodes_visible_science_and_turn_labels) ... ok
 test_models_without_published_checksum_are_rejected (test_local_voice.LocalVoiceTests.test_models_without_published_checksum_are_rejected) ... ok
 test_profiles_keep_character_differences_and_provider_is_signed (test_local_voice.LocalVoiceTests.test_profiles_keep_character_differences_and_provider_is_signed) ... ok
 test_candidate_is_never_final_without_matching_validation (test_release_gate.ReleaseGateTests.test_candidate_is_never_final_without_matching_validation) ... ok
@@ -34,6 +35,6 @@ test_resume_rejects_manually_edited_scene_and_timeline (test_validation.ExportVa
 test_true_peak_and_loudness_are_acceptance_checks (test_validation.ExportValidationTests.test_true_peak_and_loudness_are_acceptance_checks) ... ok
 
 ----------------------------------------------------------------------
-Ran 34 tests in 14.187s
+Ran 35 tests in 13.227s
 
 OK
