@@ -1,0 +1,12 @@
+{
+  "required_hosts": [
+    "speech.platform.bing.com"
+  ],
+  "protocols": [
+    "HTTPS",
+    "WSS"
+  ],
+  "port": 443,
+  "credentials_required": false,
+  "reason": "Gerar as 44 falas com as quatro vozes aprovadas"
+}

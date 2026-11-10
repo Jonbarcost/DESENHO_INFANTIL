@@ -1,0 +1,30 @@
+{
+  "provisional_timing": true,
+  "frames": 2638,
+  "results": [
+    {
+      "engine": "BLENDER_EEVEE_NEXT",
+      "width": 480,
+      "sample_seconds": [
+        20.604720603000715
+      ],
+      "steady_seconds": null,
+      "estimated_native_seconds": null,
+      "includes_initialization": true
+    },
+    {
+      "engine": "BLENDER_WORKBENCH",
+      "width": 1920,
+      "sample_seconds": [
+        0.7675248659998033,
+        0.718221289000212,
+        0.7231070710004133
+      ],
+      "steady_seconds": 0.7206641800003126,
+      "estimated_native_seconds": 1901.1121068408247
+    }
+  ],
+  "recommended": "BLENDER_WORKBENCH",
+  "estimate_minutes": 31.685201780680412,
+  "note": "EEVEE: uma amostra com compilação/inicialização; não extrapolar custo integral. Workbench: duas amostras após warmup. Estimativa provisória, não render completo."
+}

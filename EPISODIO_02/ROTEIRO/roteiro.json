@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "episode": "02",
+  "title": "O Mistério da Borboleta Azul",
+  "series": "Clareira dos Curiosos",
+  "fps": 12,
+  "target_duration": [
+    180,
+    300
+  ],
+  "render_width": 1920,
+  "voices": {
+    "CAPI": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+12%",
+      "pitch": "+15Hz"
+    },
+    "TECO": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+22%",
+      "pitch": "+35Hz"
+    },
+    "MAYA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+8%",
+      "pitch": "+18Hz"
+    },
+    "NARRADORA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+5%",
+      "pitch": "+5Hz"
+    }
+  },
+  "scenes": [
+    {
+      "id": "abertura",
+      "title": "Bom dia, clareira!",
+      "min_duration": 24,
+      "mode": "intro",
+      "dialogue": [
+        {
+          "id": "01_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "Uma manhã ensolarada começava na Clareira dos Curiosos. Capi, Teco e Maya tinham combinado um passeio.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "01_02_capi",
+          "speaker": "CAPI",
+          "text": "Bom dia, flores! Bom dia, amiguinhos!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "01_03_teco",
+          "speaker": "TECO",
+          "text": "Eu trouxe minhas pernas mais rápidas! Olha só!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "01_04_maya",
+          "speaker": "MAYA",
+          "text": "E eu trouxe meus olhos curiosos. Vamos observar a natureza?",
+          "pause_after": 0.65
+        },
+        {
+          "id": "01_05_narradora",
+          "speaker": "NARRADORA",
+          "text": "Então, um pontinho azul passou bem pertinho de Capi.",
+          "pause_after": 0.65
+        }
+      ]
+    },
+    {
+      "id": "descoberta",
+      "title": "Um brilho azul",
+      "min_duration": 28,
+      "mode": "discovery",
+      "dialogue": [
+        {
+          "id": "02_01_capi",
+          "speaker": "CAPI",
+          "text": "Uau! Uma borboleta azul! Parece um pedacinho do céu!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "02_02_teco",
+          "speaker": "TECO",
+          "text": "Borboletinha! Espera por mim! Também sei fazer zigue-zague!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "02_03_maya",
+          "speaker": "MAYA",
+          "text": "Vamos olhar com carinho, sem tocar nas asas. Elas são delicadas.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "02_04_capi",
+          "speaker": "CAPI",
+          "text": "Ela está voando de um lado para o outro. O que será que procura?",
+          "pause_after": 0.65
+        },
+        {
+          "id": "02_05_teco",
+          "speaker": "TECO",
+          "text": "Talvez esteja procurando uma festa!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "02_06_maya",
+          "speaker": "MAYA",
+          "text": "Pode ser alguma coisa importante. Vamos descobrir juntos!",
+          "pause_after": 0.65
+        }
+      ]
+    },
+    {
+      "id": "perseguicao",
+      "title": "Devagar, Teco!",
+      "min_duration": 32,
+      "mode": "chase",
+      "dialogue": [
+        {
+          "id": "03_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "A borboleta voou entre as árvores. Os três amigos seguiram seu caminho, mantendo uma boa distância.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "03_02_teco",
+          "speaker": "TECO",
+          "text": "Pra lá! Pra cá! Eu sou o grande detetive do azul!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "03_03_teco",
+          "speaker": "TECO",
+          "text": "Opa! Meu pé resolveu passear sozinho!",
+          "pause_after": 3.0,
+          "event": "stumble"
+        },
+        {
+          "id": "03_04_capi",
+          "speaker": "CAPI",
+          "text": "Tudo bem, Teco? Vamos mais devagar!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "03_05_teco",
+          "speaker": "TECO",
+          "text": "Tudo bem! Foi só um tropeço pequenininho. Meu pé já voltou!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "03_06_maya",
+          "speaker": "MAYA",
+          "text": "A natureza não tem pressa. Olha: ela parou naquela flor!",
+          "pause_after": 0.65
+        }
+      ]
+    },
+    {
+      "id": "investigacao",
+      "title": "Uma pista nas flores",
+      "min_duration": 27,
+      "mode": "investigate",
+      "dialogue": [
+        {
+          "id": "04_01_capi",
+          "speaker": "CAPI",
+          "text": "Ela chegou perto da flor... e já saiu de novo!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "04_02_teco",
+          "speaker": "TECO",
+          "text": "Flor errada? Será que ela perdeu o endereço?",
+          "pause_after": 0.65
+        },
+        {
+          "id": "04_03_maya",
+          "speaker": "MAYA",
+          "text": "Reparem: ela visita uma flor e depois procura outra.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "04_04_narradora",
+          "speaker": "NARRADORA",
+          "text": "Maya observou com atenção. Mais adiante havia um cantinho com poucas flores.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "04_05_maya",
+          "speaker": "MAYA",
+          "text": "Acho que descobri uma pista. Vamos até aquele jardim?",
+          "pause_after": 0.65
+        },
+        {
+          "id": "04_06_capi",
+          "speaker": "CAPI",
+          "text": "Vamos! Com passos calmos e olhos bem abertos!",
+          "pause_after": 0.65
+        }
+      ]
+    },
+    {
+      "id": "jardim",
+      "title": "O lanche da borboleta",
+      "min_duration": 44,
+      "mode": "garden",
+      "dialogue": [
+        {
+          "id": "05_01_teco",
+          "speaker": "TECO",
+          "text": "Aqui tem espaço, mas quase nenhuma flor!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "05_02_capi",
+          "speaker": "CAPI",
+          "text": "Será que a nossa amiga está com fome?",
+          "pause_after": 0.65
+        },
+        {
+          "id": "05_03_maya",
+          "speaker": "MAYA",
+          "text": "Isso mesmo! Muitas borboletas bebem néctar, um líquido docinho que fica nas flores.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "05_04_teco",
+          "speaker": "TECO",
+          "text": "Então a flor é um restaurante de borboleta!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "05_05_maya",
+          "speaker": "MAYA",
+          "text": "É uma boa comparação! Enquanto visita as flores, ela também pode levar pólen de uma para outra.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "05_06_capi",
+          "speaker": "CAPI",
+          "text": "Pólen? O que é isso?",
+          "pause_after": 0.65
+        },
+        {
+          "id": "05_07_maya",
+          "speaker": "MAYA",
+          "text": "É um pozinho das flores. Essa viagem do pólen se chama polinização e ajuda muitas plantas a formar sementes.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "05_08_teco",
+          "speaker": "TECO",
+          "text": "Ela encontra alimento e ainda ajuda o jardim! Que vizinha legal!",
+          "pause_after": 0.65
+        }
+      ]
+    },
+    {
+      "id": "cuidado",
+      "title": "Um jardim para os visitantes",
+      "min_duration": 35,
+      "mode": "care",
+      "dialogue": [
+        {
+          "id": "06_01_capi",
+          "speaker": "CAPI",
+          "text": "Vamos cuidar deste cantinho? Podemos plantar mais flores!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "06_02_maya",
+          "speaker": "MAYA",
+          "text": "Vamos trazer mudinhas próprias para este lugar, sem arrancar as flores da clareira.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "06_03_teco",
+          "speaker": "TECO",
+          "text": "Eu posso regar! Pouquinho, sem fazer um lago!",
+          "pause_after": 3.0
+        },
+        {
+          "id": "06_04_narradora",
+          "speaker": "NARRADORA",
+          "text": "Os amigos plantaram mudas com cuidado, regaram a terra e deixaram a borboleta voar livre.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "06_05_maya",
+          "speaker": "MAYA",
+          "text": "As plantas precisam de tempo, água e luz. Vamos continuar cuidando!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "06_06_narradora",
+          "speaker": "NARRADORA",
+          "text": "Alguns dias depois, novas flores se abriram. O jardim ficou cheio de cores e recebeu outros visitantes.",
+          "pause_after": 0.65
+        }
+      ]
+    },
+    {
+      "id": "encerramento",
+      "title": "Mistério resolvido!",
+      "min_duration": 28,
+      "mode": "finale",
+      "dialogue": [
+        {
+          "id": "07_01_capi",
+          "speaker": "CAPI",
+          "text": "Olhem! A borboleta encontrou flores para visitar!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "07_02_teco",
+          "speaker": "TECO",
+          "text": "Mistério resolvido! O segredo era um lanchinho de flor!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "07_03_maya",
+          "speaker": "MAYA",
+          "text": "Quando protegemos as plantas, ajudamos os animais que vivem perto delas.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "07_04_narradora",
+          "speaker": "NARRADORA",
+          "text": "Capi, Teco e Maya celebraram. Um jardim bem cuidado pode ser uma casa cheia de vida.",
+          "pause_after": 0.65
+        },
+        {
+          "id": "07_05_capi",
+          "speaker": "CAPI",
+          "text": "Até a próxima aventura, amiguinhos!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "07_06_teco",
+          "speaker": "TECO",
+          "text": "Escutaram? Tem um barulhinho de água vindo dali!",
+          "pause_after": 0.65
+        },
+        {
+          "id": "07_07_maya",
+          "speaker": "MAYA",
+          "text": "Será um riacho? Vamos descobrir na próxima aventura!",
+          "pause_after": 0.65
+        }
+      ]
+    }
+  ]
+}

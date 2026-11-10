@@ -1,0 +1,23 @@
+{
+  "completed": false,
+  "blocker": "Edge TTS HTTP 403 via proxy: speech.platform.bing.com",
+  "config_edit": "Draft read failed twice with INVALID_ARGUMENT; no network change saved",
+  "script_lines": 44,
+  "planned_duration": 219.8333333333,
+  "planned_frames": 2638,
+  "editable_layout": true,
+  "preview": {
+    "duration": 4.0,
+    "frames": 48,
+    "silent": true,
+    "provisional": true
+  },
+  "tests_passed": 17,
+  "preserved_files": 940,
+  "valid_new_voices": 0,
+  "full_render": false,
+  "final_mix": false,
+  "final_mp4": false,
+  "published": false,
+  "next_command": "python3 -m producao.serie EPISODIO_02/ROTEIRO/roteiro.json"
+}

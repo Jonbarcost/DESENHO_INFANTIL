@@ -1,0 +1,5 @@
+{
+  "completed": false,
+  "stage": "all",
+  "error": "Vozes não geradas. Consulte tts.log; libere speech.platform.bing.com se houver HTTP 403. Nenhum render final foi iniciado."
+}

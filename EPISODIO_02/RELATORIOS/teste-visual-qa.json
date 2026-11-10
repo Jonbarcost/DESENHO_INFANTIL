@@ -1,0 +1,13 @@
+{
+  "provisional": true,
+  "purpose": "Teste visual; não é o episódio final",
+  "duration": 4.0,
+  "frames": 48,
+  "width": 1280,
+  "height": 720,
+  "full_decode": "passed",
+  "minimum_consecutive_frame_change": 0.47180554270744324,
+  "black_frame_count": 0,
+  "frozen_adjacent_frames": 0,
+  "audio_present": false
+}
