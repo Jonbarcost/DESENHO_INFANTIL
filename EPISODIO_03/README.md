@@ -1,6 +1,8 @@
 # Episódio 03 — O Segredo do Riachinho
 
-Produção educativa de 3–5 minutos. Personagens, malhas da clareira e configurações de vozes locais reaproveitados. Episódios 01 e 02 preservados. Sem publicação no YouTube.
+**Produção concluída e validada: 4min15s, 1920×1080 nativos, 12 fps, 48 falas e 55 tomadas com movimento.** 30 testes de automação aprovados.
+
+ Personagens, malhas da clareira e configurações de vozes locais reaproveitados. Episódios 01 e 02 preservados. Sem publicação no YouTube.
 
 ## Produzir e retomar
 
@@ -27,3 +29,7 @@ Os relatórios verificam formato, duração, decodificação integral, falas e i
 O gancho propõe **A Viagem da Gotinha**, introduzindo evaporação, nuvens e chuva. Copie o esquema de roteiro para EPISODIO_04, mantenha os perfis de voz e adapte a cena para os fenômenos do novo episódio. Não reutilize uma cena pronta para uma história diferente sem adaptar ações e controle de qualidade.
 
 No Windows: execute `EPISODIO_03\produzir_windows.cmd`. O lançador instala dependências gratuitas em ambiente local e verifica os modelos antes de usá-los. Para renderizar a partir do pacote editável, use `EPISODIO_03\produzir_windows.cmd --output EPISODIO_03/RENDER_WINDOWS`, pois os masters e PNGs são regenerados. Lançador preparado, sem teste nativo no Windows.
+
+A cena Blender contém as animações editáveis em curvas. A mixagem é feita externamente pelo pipeline, a partir das vozes, música e efeitos; o áudio não está embutido no arquivo Blender.
+
+Os downloads estão no branch `entrega-episodio-03`: MP4 1080p, versão leve 720p e ZIP do projeto editável. Consulte `RELATORIOS/validacao-final.json` para os testes e hashes.

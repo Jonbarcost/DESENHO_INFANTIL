@@ -1,0 +1,199 @@
+{
+  "provisional": false,
+  "dialogue_included": true,
+  "speech_background": [
+    {
+      "id": "03_01_01_narradora",
+      "voice_background_db": 25.03
+    },
+    {
+      "id": "03_01_02_capi",
+      "voice_background_db": 25.62
+    },
+    {
+      "id": "03_01_03_teco",
+      "voice_background_db": 25.61
+    },
+    {
+      "id": "03_01_04_maya",
+      "voice_background_db": 26.06
+    },
+    {
+      "id": "03_01_05_narradora",
+      "voice_background_db": 23.47
+    },
+    {
+      "id": "03_01_06_capi",
+      "voice_background_db": 26.32
+    },
+    {
+      "id": "03_02_01_narradora",
+      "voice_background_db": 23.33
+    },
+    {
+      "id": "03_02_02_teco",
+      "voice_background_db": 26.32
+    },
+    {
+      "id": "03_02_03_maya",
+      "voice_background_db": 23.96
+    },
+    {
+      "id": "03_02_04_capi",
+      "voice_background_db": 26.45
+    },
+    {
+      "id": "03_02_05_maya",
+      "voice_background_db": 24.36
+    },
+    {
+      "id": "03_02_06_teco",
+      "voice_background_db": 25.39
+    },
+    {
+      "id": "03_03_01_capi",
+      "voice_background_db": 24.49
+    },
+    {
+      "id": "03_03_02_narradora",
+      "voice_background_db": 26.17
+    },
+    {
+      "id": "03_03_03_teco",
+      "voice_background_db": 25.93
+    },
+    {
+      "id": "03_03_04_maya",
+      "voice_background_db": 24.92
+    },
+    {
+      "id": "03_03_05_teco",
+      "voice_background_db": 24.75
+    },
+    {
+      "id": "03_03_06_capi",
+      "voice_background_db": 24.16
+    },
+    {
+      "id": "03_03_07_narradora",
+      "voice_background_db": 24.85
+    },
+    {
+      "id": "03_04_01_teco",
+      "voice_background_db": 26.2
+    },
+    {
+      "id": "03_04_02_capi",
+      "voice_background_db": 25.93
+    },
+    {
+      "id": "03_04_03_maya",
+      "voice_background_db": 26.97
+    },
+    {
+      "id": "03_04_04_narradora",
+      "voice_background_db": 24.98
+    },
+    {
+      "id": "03_04_05_teco",
+      "voice_background_db": 24.36
+    },
+    {
+      "id": "03_04_06_maya",
+      "voice_background_db": 23.83
+    },
+    {
+      "id": "03_04_07_capi",
+      "voice_background_db": 24.77
+    },
+    {
+      "id": "03_05_01_teco",
+      "voice_background_db": 25.68
+    },
+    {
+      "id": "03_05_02_maya",
+      "voice_background_db": 24.44
+    },
+    {
+      "id": "03_05_03_capi",
+      "voice_background_db": 25.13
+    },
+    {
+      "id": "03_05_04_maya",
+      "voice_background_db": 23.91
+    },
+    {
+      "id": "03_05_05_narradora",
+      "voice_background_db": 26.62
+    },
+    {
+      "id": "03_05_06_teco",
+      "voice_background_db": 26.22
+    },
+    {
+      "id": "03_05_07_capi",
+      "voice_background_db": 25.47
+    },
+    {
+      "id": "03_05_08_maya",
+      "voice_background_db": 23.56
+    },
+    {
+      "id": "03_06_01_narradora",
+      "voice_background_db": 25.29
+    },
+    {
+      "id": "03_06_02_capi",
+      "voice_background_db": 23.36
+    },
+    {
+      "id": "03_06_03_teco",
+      "voice_background_db": 24.63
+    },
+    {
+      "id": "03_06_04_maya",
+      "voice_background_db": 26.0
+    },
+    {
+      "id": "03_06_05_narradora",
+      "voice_background_db": 23.49
+    },
+    {
+      "id": "03_06_06_capi",
+      "voice_background_db": 24.7
+    },
+    {
+      "id": "03_06_07_maya",
+      "voice_background_db": 25.64
+    },
+    {
+      "id": "03_07_01_teco",
+      "voice_background_db": 23.58
+    },
+    {
+      "id": "03_07_02_capi",
+      "voice_background_db": 24.57
+    },
+    {
+      "id": "03_07_03_maya",
+      "voice_background_db": 24.77
+    },
+    {
+      "id": "03_07_04_narradora",
+      "voice_background_db": 25.18
+    },
+    {
+      "id": "03_07_05_teco",
+      "voice_background_db": 25.24
+    },
+    {
+      "id": "03_07_06_capi",
+      "voice_background_db": 25.6
+    },
+    {
+      "id": "03_07_07_maya",
+      "voice_background_db": 26.34
+    }
+  ],
+  "source": "Oscillators and seeded noise only; no external samples"
+}

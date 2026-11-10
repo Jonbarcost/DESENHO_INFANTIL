@@ -1,0 +1,28 @@
+{
+  "completed": true,
+  "duration": 254.58333333333334,
+  "frames": 3055,
+  "speech_count": 48,
+  "render_width": 1920,
+  "export_width": 1920,
+  "loudness": {
+    "input_i": "-16.40",
+    "input_tp": "-1.39",
+    "input_lra": "4.10",
+    "input_thresh": "-27.47",
+    "output_i": "-16.10",
+    "output_tp": "-1.50",
+    "output_lra": "3.90",
+    "output_thresh": "-27.09",
+    "normalization_type": "dynamic",
+    "target_offset": "0.10"
+  },
+  "full_decode": "passed",
+  "black_and_freeze_detection": "passed",
+  "sha256": "9af7f089014652b18fbaf846d8cb76f2c03e529b5563114e36fdab716b7af2b2",
+  "motion_shots": 55,
+  "lip_sync": 0.9999678175610591,
+  "subtitle_text_checks": 48,
+  "previous_files_preserved": 403,
+  "youtube_published": false
+}
