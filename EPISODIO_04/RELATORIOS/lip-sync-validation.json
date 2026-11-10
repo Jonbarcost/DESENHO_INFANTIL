@@ -1,0 +1,176 @@
+{
+  "method": "Correlação entre RMS de MP3 decodificado e abertura de boca baked na cena",
+  "limitation": "Verifica cadência/energia; não verifica visemas fonéticos",
+  "dialogue_checks": 33,
+  "minimum_correlation": 0.9999643500837762,
+  "measurements": [
+    {
+      "id": "04_01_02_capi",
+      "frames": 44,
+      "energy_mouth_correlation": 0.9999998823178772
+    },
+    {
+      "id": "04_01_03_teco",
+      "frames": 30,
+      "energy_mouth_correlation": 0.9999942876065059
+    },
+    {
+      "id": "04_01_04_maya",
+      "frames": 41,
+      "energy_mouth_correlation": 0.9999879804397042
+    },
+    {
+      "id": "04_01_05_capi",
+      "frames": 43,
+      "energy_mouth_correlation": 0.9999996635014412
+    },
+    {
+      "id": "04_02_01_teco",
+      "frames": 48,
+      "energy_mouth_correlation": 0.9999805201110445
+    },
+    {
+      "id": "04_02_02_maya",
+      "frames": 62,
+      "energy_mouth_correlation": 0.9999760498383208
+    },
+    {
+      "id": "04_02_03_capi",
+      "frames": 47,
+      "energy_mouth_correlation": 0.9999998115555145
+    },
+    {
+      "id": "04_02_04_maya",
+      "frames": 61,
+      "energy_mouth_correlation": 0.999987756658025
+    },
+    {
+      "id": "04_02_06_teco",
+      "frames": 41,
+      "energy_mouth_correlation": 0.9999852823521969
+    },
+    {
+      "id": "04_03_01_capi",
+      "frames": 58,
+      "energy_mouth_correlation": 0.9999993825152126
+    },
+    {
+      "id": "04_03_03_teco",
+      "frames": 45,
+      "energy_mouth_correlation": 0.9999829641445387
+    },
+    {
+      "id": "04_03_04_maya",
+      "frames": 54,
+      "energy_mouth_correlation": 0.9999913969929918
+    },
+    {
+      "id": "04_03_05_capi",
+      "frames": 41,
+      "energy_mouth_correlation": 0.9999996357562307
+    },
+    {
+      "id": "04_03_06_maya",
+      "frames": 66,
+      "energy_mouth_correlation": 0.9999872242556789
+    },
+    {
+      "id": "04_04_01_teco",
+      "frames": 45,
+      "energy_mouth_correlation": 0.9999841208093326
+    },
+    {
+      "id": "04_04_02_maya",
+      "frames": 69,
+      "energy_mouth_correlation": 0.9999764860839786
+    },
+    {
+      "id": "04_04_04_capi",
+      "frames": 42,
+      "energy_mouth_correlation": 0.9999997869326641
+    },
+    {
+      "id": "04_04_05_maya",
+      "frames": 60,
+      "energy_mouth_correlation": 0.9999904567575993
+    },
+    {
+      "id": "04_04_06_teco",
+      "frames": 49,
+      "energy_mouth_correlation": 0.9999854089208409
+    },
+    {
+      "id": "04_05_02_capi",
+      "frames": 46,
+      "energy_mouth_correlation": 0.9999997482071987
+    },
+    {
+      "id": "04_05_03_maya",
+      "frames": 49,
+      "energy_mouth_correlation": 0.9999874658698933
+    },
+    {
+      "id": "04_05_04_teco",
+      "frames": 58,
+      "energy_mouth_correlation": 0.9999643500837762
+    },
+    {
+      "id": "04_05_05_capi",
+      "frames": 58,
+      "energy_mouth_correlation": 0.9999996106835184
+    },
+    {
+      "id": "04_06_01_capi",
+      "frames": 42,
+      "energy_mouth_correlation": 0.999999853013415
+    },
+    {
+      "id": "04_06_02_maya",
+      "frames": 74,
+      "energy_mouth_correlation": 0.9999804714579683
+    },
+    {
+      "id": "04_06_03_teco",
+      "frames": 47,
+      "energy_mouth_correlation": 0.9999982170156576
+    },
+    {
+      "id": "04_06_05_maya",
+      "frames": 54,
+      "energy_mouth_correlation": 0.9999941106314403
+    },
+    {
+      "id": "04_06_06_capi",
+      "frames": 64,
+      "energy_mouth_correlation": 0.9999994463383498
+    },
+    {
+      "id": "04_07_02_capi",
+      "frames": 52,
+      "energy_mouth_correlation": 0.9999996426804046
+    },
+    {
+      "id": "04_07_03_maya",
+      "frames": 60,
+      "energy_mouth_correlation": 0.9999882959400934
+    },
+    {
+      "id": "04_07_04_teco",
+      "frames": 51,
+      "energy_mouth_correlation": 0.9999984350509127
+    },
+    {
+      "id": "04_07_05_capi",
+      "frames": 61,
+      "energy_mouth_correlation": 0.9999997668841729
+    },
+    {
+      "id": "04_07_06_maya",
+      "frames": 67,
+      "energy_mouth_correlation": 0.9999889656055896
+    }
+  ],
+  "passed": true,
+  "video_sha256": "29a86c5b60f953c5cf9e7c5b29987307b5b69df10de19fca0dacda76768994fe",
+  "scene_sha256": "95f687a79671335f1b85e792abf499815ee91f6a752a79616f26a0860bdf4504"
+}

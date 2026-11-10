@@ -1,0 +1,35 @@
+{
+  "completed": true,
+  "duration": 267.3333333333333,
+  "frames": 3208,
+  "speech_count": 42,
+  "render_width": 1920,
+  "export_width": 1920,
+  "loudness": {
+    "input_i": "-16.71",
+    "input_tp": "-1.47",
+    "input_lra": "6.80",
+    "input_thresh": "-27.70",
+    "output_i": "-16.11",
+    "output_tp": "-1.50",
+    "output_lra": "5.50",
+    "output_thresh": "-27.01",
+    "normalization_type": "dynamic",
+    "target_offset": "0.11"
+  },
+  "full_decode": "passed",
+  "black_and_freeze_detection": "passed",
+  "sha256": "29a86c5b60f953c5cf9e7c5b29987307b5b69df10de19fca0dacda76768994fe",
+  "scene_sha256": "95f687a79671335f1b85e792abf499815ee91f6a752a79616f26a0860bdf4504",
+  "independent_checks": "passed",
+  "proofs": {
+    "motion-report.json": "a72d3087d8a26d086a0a3863853a38b1e205afffc828248c69e715425995049e",
+    "lip-sync-validation.json": "6c80dcd54a3f1aa428093ec1e6d334b54ed1c731b9c4a5175e0d4faba28d72aa",
+    "interaction-validation.json": "9d2dfd2c84c660625c3584ebe5ac5f500d1bd1110d6574f564bbe710e78daf01"
+  },
+  "motion_shots": 49,
+  "lip_sync": 0.9999643500837762,
+  "subtitle_text_checks": 42,
+  "previous_files_preserved": 548,
+  "youtube_published": false
+}

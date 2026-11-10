@@ -1,0 +1,250 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "frame": 1,
+      "shot": "EP4_Camera_00",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 18,
+      "shot": "EP4_Camera_01",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 101,
+      "shot": "EP4_Camera_02",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 154,
+      "shot": "EP4_Camera_03",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 193,
+      "shot": "EP4_Camera_04",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 244,
+      "shot": "EP4_Camera_05",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 329,
+      "shot": "EP4_Camera_06",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 413,
+      "shot": "EP4_Camera_07",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 430,
+      "shot": "EP4_Camera_08",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 487,
+      "shot": "EP4_Camera_09",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 559,
+      "shot": "EP4_Camera_10",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 616,
+      "shot": "EP4_Camera_11",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 687,
+      "shot": "EP4_Camera_12",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 770,
+      "shot": "EP4_Camera_13",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 834,
+      "shot": "EP4_Camera_14",
+      "scale": 1.0
+    },
+    {
+      "frame": 851,
+      "shot": "EP4_Camera_15",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 947,
+      "shot": "EP4_Camera_16",
+      "scale": 1.0
+    },
+    {
+      "frame": 1029,
+      "shot": "EP4_Camera_17",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 1083,
+      "shot": "EP4_Camera_18",
+      "scale": 1.0
+    },
+    {
+      "frame": 1147,
+      "shot": "EP4_Camera_19",
+      "scale": 1.0
+    },
+    {
+      "frame": 1197,
+      "shot": "EP4_Camera_20",
+      "scale": 1.0
+    },
+    {
+      "frame": 1284,
+      "shot": "EP4_Camera_21",
+      "scale": 1.0
+    },
+    {
+      "frame": 1301,
+      "shot": "EP4_Camera_22",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 1355,
+      "shot": "EP4_Camera_23",
+      "scale": 1.0
+    },
+    {
+      "frame": 1434,
+      "shot": "EP4_Camera_24",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 1515,
+      "shot": "EP4_Camera_25",
+      "scale": 1.0
+    },
+    {
+      "frame": 1599,
+      "shot": "EP4_Camera_26",
+      "scale": 1.0
+    },
+    {
+      "frame": 1669,
+      "shot": "EP4_Camera_27",
+      "scale": 1.0
+    },
+    {
+      "frame": 1740,
+      "shot": "EP4_Camera_28",
+      "scale": 1.0
+    },
+    {
+      "frame": 1757,
+      "shot": "EP4_Camera_29",
+      "scale": 1.0
+    },
+    {
+      "frame": 1846,
+      "shot": "EP4_Camera_30",
+      "scale": 1.0
+    },
+    {
+      "frame": 1902,
+      "shot": "EP4_Camera_31",
+      "scale": 1.0
+    },
+    {
+      "frame": 1962,
+      "shot": "EP4_Camera_32",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2067,
+      "shot": "EP4_Camera_33",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2161,
+      "shot": "EP4_Camera_34",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2253,
+      "shot": "EP4_Camera_35",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2270,
+      "shot": "EP4_Camera_36",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2322,
+      "shot": "EP4_Camera_37",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2405,
+      "shot": "EP4_Camera_38",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2462,
+      "shot": "EP4_Camera_39",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2540,
+      "shot": "EP4_Camera_40",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2603,
+      "shot": "EP4_Camera_41",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2718,
+      "shot": "EP4_Camera_42",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2735,
+      "shot": "EP4_Camera_43",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2828,
+      "shot": "EP4_Camera_44",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2889,
+      "shot": "EP4_Camera_45",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 2958,
+      "shot": "EP4_Camera_46",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 3048,
+      "shot": "EP4_Camera_47",
+      "scale": 0.0010000000474974513
+    },
+    {
+      "frame": 3119,
+      "shot": "EP4_Camera_48",
+      "scale": 0.0010000000474974513
+    }
+  ]
+}

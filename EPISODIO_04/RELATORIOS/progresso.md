@@ -8,3 +8,5 @@ Task 2: correções da revisão implementadas. Teste de gestos RED→GREEN na ce
 Task 2: complete — 23 poses nativas renderizadas e inspecionadas, mãos/estiramento corrigidos, nuvens enquadradas, contexto visual dos modelos limpo. Suíte 34/34 verde. Recursos antigos preservados.
 Task 3: primeiro lote de 12 quadros medido e mantido. Render completo autorizado no escopo original; fontes da cena congeladas antes de iniciar.
 Task 3: correção de alinhamento de cortes RED→GREEN, preservação de 856 estados comprovada por matrizes/meshes/câmera. Lotes retomados sem rerender dos quadros concluídos; suite34 verde após mudança.
+
+Task 3: render 3208/3208 e MP4 final concluídos; 267.333s, 42 falas, 49 tomadas com movimento, 33 falas verificadas por RMS/boca, nove poses interativas e 49 cortes. Decodificação, volume, preto/congelamento, textos das legendas e 548 arquivos anteriores: aprovados. Reexecução respondeu ALREADY_VERIFIED, sem refazer etapas. Cópia celular aprovada com AAC idêntico. Pacote/download em preparação.

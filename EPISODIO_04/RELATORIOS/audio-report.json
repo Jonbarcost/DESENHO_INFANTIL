@@ -1,0 +1,175 @@
+{
+  "provisional": false,
+  "dialogue_included": true,
+  "speech_background": [
+    {
+      "id": "04_01_01_narradora",
+      "voice_background_db": 27.29
+    },
+    {
+      "id": "04_01_02_capi",
+      "voice_background_db": 27.27
+    },
+    {
+      "id": "04_01_03_teco",
+      "voice_background_db": 26.23
+    },
+    {
+      "id": "04_01_04_maya",
+      "voice_background_db": 27.67
+    },
+    {
+      "id": "04_01_05_capi",
+      "voice_background_db": 28.66
+    },
+    {
+      "id": "04_01_06_narradora",
+      "voice_background_db": 26.93
+    },
+    {
+      "id": "04_02_01_teco",
+      "voice_background_db": 27.36
+    },
+    {
+      "id": "04_02_02_maya",
+      "voice_background_db": 26.61
+    },
+    {
+      "id": "04_02_03_capi",
+      "voice_background_db": 26.17
+    },
+    {
+      "id": "04_02_04_maya",
+      "voice_background_db": 25.1
+    },
+    {
+      "id": "04_02_05_narradora",
+      "voice_background_db": 26.46
+    },
+    {
+      "id": "04_02_06_teco",
+      "voice_background_db": 25.38
+    },
+    {
+      "id": "04_03_01_capi",
+      "voice_background_db": 26.95
+    },
+    {
+      "id": "04_03_02_narradora",
+      "voice_background_db": 26.88
+    },
+    {
+      "id": "04_03_03_teco",
+      "voice_background_db": 27.42
+    },
+    {
+      "id": "04_03_04_maya",
+      "voice_background_db": 26.56
+    },
+    {
+      "id": "04_03_05_capi",
+      "voice_background_db": 24.6
+    },
+    {
+      "id": "04_03_06_maya",
+      "voice_background_db": 26.03
+    },
+    {
+      "id": "04_04_01_teco",
+      "voice_background_db": 26.59
+    },
+    {
+      "id": "04_04_02_maya",
+      "voice_background_db": 27.59
+    },
+    {
+      "id": "04_04_03_narradora",
+      "voice_background_db": 26.15
+    },
+    {
+      "id": "04_04_04_capi",
+      "voice_background_db": 26.21
+    },
+    {
+      "id": "04_04_05_maya",
+      "voice_background_db": 24.85
+    },
+    {
+      "id": "04_04_06_teco",
+      "voice_background_db": 26.72
+    },
+    {
+      "id": "04_05_01_narradora",
+      "voice_background_db": 25.78
+    },
+    {
+      "id": "04_05_02_capi",
+      "voice_background_db": 24.33
+    },
+    {
+      "id": "04_05_03_maya",
+      "voice_background_db": 25.27
+    },
+    {
+      "id": "04_05_04_teco",
+      "voice_background_db": 26.99
+    },
+    {
+      "id": "04_05_05_capi",
+      "voice_background_db": 25.23
+    },
+    {
+      "id": "04_05_06_narradora",
+      "voice_background_db": 26.15
+    },
+    {
+      "id": "04_06_01_capi",
+      "voice_background_db": 27.14
+    },
+    {
+      "id": "04_06_02_maya",
+      "voice_background_db": 27.62
+    },
+    {
+      "id": "04_06_03_teco",
+      "voice_background_db": 27.74
+    },
+    {
+      "id": "04_06_04_narradora",
+      "voice_background_db": 27.71
+    },
+    {
+      "id": "04_06_05_maya",
+      "voice_background_db": 27.33
+    },
+    {
+      "id": "04_06_06_capi",
+      "voice_background_db": 27.77
+    },
+    {
+      "id": "04_07_01_narradora",
+      "voice_background_db": 27.66
+    },
+    {
+      "id": "04_07_02_capi",
+      "voice_background_db": 26.96
+    },
+    {
+      "id": "04_07_03_maya",
+      "voice_background_db": 28.38
+    },
+    {
+      "id": "04_07_04_teco",
+      "voice_background_db": 27.07
+    },
+    {
+      "id": "04_07_05_capi",
+      "voice_background_db": 26.42
+    },
+    {
+      "id": "04_07_06_maya",
+      "voice_background_db": 27.1
+    }
+  ],
+  "source": "Original 112 BPM major-key theme, plucked oscillators, synthesized percussion/rain/birds; no external samples"
+}

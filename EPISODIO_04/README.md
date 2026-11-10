@@ -1,5 +1,7 @@
 # Episódio 04 — A Viagem da Gotinha
 
+**Concluído e validado: 4min27s, 1920×1080 nativos, 12 fps, 42 falas e 49 tomadas com movimento. Suíte de 35 testes aprovada.**
+
 Desenho infantil educativo em português brasileiro, com Capi, Teco e Maya, explicando evaporação, condensação e chuva. A história tem perguntas com pausas reais, brincadeira da chuva e dança com refrão falado sobre música original alegre a 112 BPM.
 
 ## Produzir e retomar
@@ -29,3 +31,5 @@ Vapor de água é invisível. Setas e gotinha com rosto são representações im
 As brincadeiras podem ser feitas no lugar, com espaço e cuidado. Personagens observam a chuva abrigados, como informa a narração, antes de voltar à clareira. A chuva no solo só aparece depois desse retorno narrado. Não há tempestade nem aproximação do riacho.
 
 O gancho do próximo episódio é o canto dos pássaros: observar sons e cuidar dos animais sem capturá-los.
+
+Downloads no branch `entrega-episodio-04`: MP4 1080p, cópia 720p para celular e ZIP editável. Relatórios e hashes em `RELATORIOS/validacao-final.json`. Os três episódios anteriores foram preservados por hash.
