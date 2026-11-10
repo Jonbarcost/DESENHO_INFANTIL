@@ -1,3 +1,5 @@
+> Histórico da auditoria inicial. A continuação usou síntese local autorizada e concluiu a entrega; consulte ENTREGA.md e STATUS.json.
+
 # Auditoria — Episódio 02
 
 2026-11-10. Base de trabalho: bf0a17a. Episódio 01 e seus arquivos gerados são

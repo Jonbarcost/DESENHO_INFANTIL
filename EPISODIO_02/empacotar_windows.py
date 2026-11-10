@@ -31,7 +31,8 @@ def main():
                  'render-config.json','validation.json','voice-provider.json','master.wav',
                  'musica_original.wav','efeitos_natureza.wav','dialogos.wav','legendas.srt',
                  'lip-sync-validation.json','motion-report.json','scene-qa.json','audio-report.json',
-                 'storyboard-final.jpg','estimate.json'):
+                 'storyboard-final.jpg','estimate.json','poster.jpg','resume-validation.json',
+                 'subtitle-validation.json','SHA256SUMS'):
         p=out/name
         if p.is_file():files.add(p)
     timeline=json.loads((out/'timeline.json').read_text(encoding='utf-8'))

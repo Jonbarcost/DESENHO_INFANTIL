@@ -1,0 +1,76 @@
+{
+  "provisional": false,
+  "camera_markers": 51,
+  "visibility": [
+    {
+      "scene": "abertura",
+      "characters": {
+        "Capi": 5,
+        "Teco": 4,
+        "Maya": 6
+      },
+      "butterfly": 6
+    },
+    {
+      "scene": "descoberta",
+      "characters": {
+        "Capi": 5,
+        "Teco": 2,
+        "Maya": 6
+      },
+      "butterfly": 6
+    },
+    {
+      "scene": "perseguicao",
+      "characters": {
+        "Capi": 6,
+        "Teco": 6,
+        "Maya": 6
+      },
+      "butterfly": 6
+    },
+    {
+      "scene": "investigacao",
+      "characters": {
+        "Capi": 6,
+        "Teco": 2,
+        "Maya": 6
+      },
+      "butterfly": 6
+    },
+    {
+      "scene": "jardim",
+      "characters": {
+        "Capi": 4,
+        "Teco": 3,
+        "Maya": 6
+      },
+      "butterfly": 6
+    },
+    {
+      "scene": "cuidado",
+      "characters": {
+        "Capi": 6,
+        "Teco": 6,
+        "Maya": 6
+      },
+      "butterfly": 6
+    },
+    {
+      "scene": "encerramento",
+      "characters": {
+        "Capi": 4,
+        "Teco": 4,
+        "Maya": 6
+      },
+      "butterfly": 6
+    }
+  ],
+  "foot_rotation_range": 0.8589778542518616,
+  "wing_rotation_range": 2.099999964237213,
+  "butterfly_position_range": [
+    -1.9627277851104736,
+    3.079563617706299
+  ],
+  "checks": "passed"
+}

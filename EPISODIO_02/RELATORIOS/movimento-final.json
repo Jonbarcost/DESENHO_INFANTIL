@@ -1,0 +1,721 @@
+{
+  "shots": 51,
+  "motion": [
+    {
+      "shot": "EP2_Camera_abertura_0",
+      "frames": [
+        4,
+        8,
+        12,
+        15
+      ],
+      "mean_absolute_pixel_changes": [
+        1.2367360591888428,
+        1.1342419385910034,
+        0.9047048687934875
+      ]
+    },
+    {
+      "shot": "EP2_Camera_abertura_1",
+      "frames": [
+        31,
+        52,
+        73,
+        90
+      ],
+      "mean_absolute_pixel_changes": [
+        1.649519681930542,
+        1.7655150890350342,
+        1.686261534690857
+      ]
+    },
+    {
+      "shot": "EP2_Camera_abertura_2",
+      "frames": [
+        109,
+        119,
+        130,
+        138
+      ],
+      "mean_absolute_pixel_changes": [
+        3.3313252925872803,
+        3.46016788482666,
+        3.2392592430114746
+      ]
+    },
+    {
+      "shot": "EP2_Camera_abertura_3",
+      "frames": [
+        150,
+        160,
+        170,
+        179
+      ],
+      "mean_absolute_pixel_changes": [
+        2.2763831615448,
+        2.639218807220459,
+        2.807164430618286
+      ]
+    },
+    {
+      "shot": "EP2_Camera_abertura_4",
+      "frames": [
+        193,
+        207,
+        221,
+        232
+      ],
+      "mean_absolute_pixel_changes": [
+        5.629184246063232,
+        5.068414211273193,
+        5.555023193359375
+      ]
+    },
+    {
+      "shot": "EP2_Camera_abertura_5",
+      "frames": [
+        249,
+        264,
+        279,
+        290
+      ],
+      "mean_absolute_pixel_changes": [
+        1.6336169242858887,
+        1.6910301446914673,
+        1.2461168766021729
+      ]
+    },
+    {
+      "shot": "EP2_Camera_descoberta_0",
+      "frames": [
+        302,
+        306,
+        310,
+        313
+      ],
+      "mean_absolute_pixel_changes": [
+        1.1124826669692993,
+        1.1721991300582886,
+        0.9698090553283691
+      ]
+    },
+    {
+      "shot": "EP2_Camera_descoberta_1",
+      "frames": [
+        323,
+        335,
+        346,
+        356
+      ],
+      "mean_absolute_pixel_changes": [
+        4.012326240539551,
+        4.2905731201171875,
+        3.7715625762939453
+      ]
+    },
+    {
+      "shot": "EP2_Camera_descoberta_2",
+      "frames": [
+        371,
+        384,
+        397,
+        408
+      ],
+      "mean_absolute_pixel_changes": [
+        3.7678935527801514,
+        4.346765041351318,
+        3.7169792652130127
+      ]
+    },
+    {
+      "shot": "EP2_Camera_descoberta_3",
+      "frames": [
+        424,
+        438,
+        452,
+        463
+      ],
+      "mean_absolute_pixel_changes": [
+        7.3710126876831055,
+        8.186406135559082,
+        5.8050055503845215
+      ]
+    },
+    {
+      "shot": "EP2_Camera_descoberta_4",
+      "frames": [
+        478,
+        491,
+        503,
+        513
+      ],
+      "mean_absolute_pixel_changes": [
+        3.3613483905792236,
+        3.8092246055603027,
+        3.1058332920074463
+      ]
+    },
+    {
+      "shot": "EP2_Camera_descoberta_5",
+      "frames": [
+        526,
+        535,
+        543,
+        551
+      ],
+      "mean_absolute_pixel_changes": [
+        3.9217708110809326,
+        4.266058921813965,
+        2.9293692111968994
+      ]
+    },
+    {
+      "shot": "EP2_Camera_descoberta_6",
+      "frames": [
+        568,
+        587,
+        607,
+        623
+      ],
+      "mean_absolute_pixel_changes": [
+        5.481088161468506,
+        6.434704780578613,
+        8.53284740447998
+      ]
+    },
+    {
+      "shot": "EP2_Camera_perseguicao_0",
+      "frames": [
+        638,
+        642,
+        646,
+        649
+      ],
+      "mean_absolute_pixel_changes": [
+        1.314415454864502,
+        1.3157349824905396,
+        0.8577604293823242
+      ]
+    },
+    {
+      "shot": "EP2_Camera_perseguicao_1",
+      "frames": [
+        664,
+        684,
+        704,
+        720
+      ],
+      "mean_absolute_pixel_changes": [
+        3.0557754039764404,
+        3.3118691444396973,
+        3.47348952293396
+      ]
+    },
+    {
+      "shot": "EP2_Camera_perseguicao_2",
+      "frames": [
+        738,
+        748,
+        758,
+        767
+      ],
+      "mean_absolute_pixel_changes": [
+        3.444154977798462,
+        3.1523263454437256,
+        2.847083330154419
+      ]
+    },
+    {
+      "shot": "EP2_Camera_perseguicao_3",
+      "frames": [
+        782,
+        798,
+        813,
+        825
+      ],
+      "mean_absolute_pixel_changes": [
+        4.684132099151611,
+        4.511903762817383,
+        3.1345486640930176
+      ]
+    },
+    {
+      "shot": "EP2_Camera_perseguicao_4",
+      "frames": [
+        840,
+        850,
+        859,
+        867
+      ],
+      "mean_absolute_pixel_changes": [
+        3.9148612022399902,
+        3.6724536418914795,
+        3.1955902576446533
+      ]
+    },
+    {
+      "shot": "EP2_Camera_perseguicao_5",
+      "frames": [
+        880,
+        893,
+        905,
+        915
+      ],
+      "mean_absolute_pixel_changes": [
+        3.3495311737060547,
+        3.6882407665252686,
+        3.8746297359466553
+      ]
+    },
+    {
+      "shot": "EP2_Camera_perseguicao_6",
+      "frames": [
+        937,
+        962,
+        986,
+        1005
+      ],
+      "mean_absolute_pixel_changes": [
+        3.80391788482666,
+        2.3594443798065186,
+        1.6177083253860474
+      ]
+    },
+    {
+      "shot": "EP2_Camera_investigacao_0",
+      "frames": [
+        1023,
+        1027,
+        1031,
+        1034
+      ],
+      "mean_absolute_pixel_changes": [
+        1.266533613204956,
+        1.3350809812545776,
+        1.0343633890151978
+      ]
+    },
+    {
+      "shot": "EP2_Camera_investigacao_1",
+      "frames": [
+        1044,
+        1057,
+        1069,
+        1079
+      ],
+      "mean_absolute_pixel_changes": [
+        5.400798797607422,
+        5.637129783630371,
+        5.829924583435059
+      ]
+    },
+    {
+      "shot": "EP2_Camera_investigacao_2",
+      "frames": [
+        1092,
+        1102,
+        1112,
+        1119
+      ],
+      "mean_absolute_pixel_changes": [
+        7.1360764503479,
+        7.311365604400635,
+        6.119988441467285
+      ]
+    },
+    {
+      "shot": "EP2_Camera_investigacao_3",
+      "frames": [
+        1132,
+        1143,
+        1154,
+        1163
+      ],
+      "mean_absolute_pixel_changes": [
+        11.104155540466309,
+        10.162453651428223,
+        9.456846237182617
+      ]
+    },
+    {
+      "shot": "EP2_Camera_investigacao_4",
+      "frames": [
+        1180,
+        1198,
+        1215,
+        1229
+      ],
+      "mean_absolute_pixel_changes": [
+        4.972158432006836,
+        4.687540531158447,
+        4.2032694816589355
+      ]
+    },
+    {
+      "shot": "EP2_Camera_investigacao_5",
+      "frames": [
+        1247,
+        1259,
+        1271,
+        1281
+      ],
+      "mean_absolute_pixel_changes": [
+        9.591469764709473,
+        7.0456366539001465,
+        6.254594802856445
+      ]
+    },
+    {
+      "shot": "EP2_Camera_investigacao_6",
+      "frames": [
+        1297,
+        1312,
+        1326,
+        1337
+      ],
+      "mean_absolute_pixel_changes": [
+        3.9734489917755127,
+        3.043240785598755,
+        2.139357566833496
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_0",
+      "frames": [
+        1349,
+        1353,
+        1357,
+        1360
+      ],
+      "mean_absolute_pixel_changes": [
+        1.2343865633010864,
+        1.2682523727416992,
+        0.9346122741699219
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_1",
+      "frames": [
+        1368,
+        1378,
+        1387,
+        1394
+      ],
+      "mean_absolute_pixel_changes": [
+        3.3381829261779785,
+        3.363205909729004,
+        2.3634142875671387
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_2",
+      "frames": [
+        1405,
+        1413,
+        1422,
+        1429
+      ],
+      "mean_absolute_pixel_changes": [
+        3.1232175827026367,
+        2.867609977722168,
+        2.5018112659454346
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_3",
+      "frames": [
+        1444,
+        1462,
+        1479,
+        1493
+      ],
+      "mean_absolute_pixel_changes": [
+        7.8425750732421875,
+        6.663669109344482,
+        6.299560070037842
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_4",
+      "frames": [
+        1509,
+        1519,
+        1529,
+        1537
+      ],
+      "mean_absolute_pixel_changes": [
+        3.6474246978759766,
+        3.7649130821228027,
+        2.7291202545166016
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_5",
+      "frames": [
+        1554,
+        1573,
+        1591,
+        1606
+      ],
+      "mean_absolute_pixel_changes": [
+        7.824421405792236,
+        5.193767547607422,
+        5.984803199768066
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_6",
+      "frames": [
+        1621,
+        1628,
+        1634,
+        1640
+      ],
+      "mean_absolute_pixel_changes": [
+        2.739351749420166,
+        2.376892328262329,
+        1.9528993368148804
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_7",
+      "frames": [
+        1657,
+        1678,
+        1700,
+        1718
+      ],
+      "mean_absolute_pixel_changes": [
+        6.006446838378906,
+        6.152528762817383,
+        6.039172649383545
+      ]
+    },
+    {
+      "shot": "EP2_Camera_jardim_8",
+      "frames": [
+        1752,
+        1788,
+        1824,
+        1853
+      ],
+      "mean_absolute_pixel_changes": [
+        4.345231533050537,
+        3.4350290298461914,
+        3.5915393829345703
+      ]
+    },
+    {
+      "shot": "EP2_Camera_cuidado_0",
+      "frames": [
+        1877,
+        1881,
+        1885,
+        1888
+      ],
+      "mean_absolute_pixel_changes": [
+        1.14254629611969,
+        1.2146990299224854,
+        0.8964177966117859
+      ]
+    },
+    {
+      "shot": "EP2_Camera_cuidado_1",
+      "frames": [
+        1899,
+        1912,
+        1926,
+        1936
+      ],
+      "mean_absolute_pixel_changes": [
+        1.688981533050537,
+        1.7015972137451172,
+        1.2037615776062012
+      ]
+    },
+    {
+      "shot": "EP2_Camera_cuidado_2",
+      "frames": [
+        1954,
+        1970,
+        1987,
+        2000
+      ],
+      "mean_absolute_pixel_changes": [
+        1.769288182258606,
+        1.8076735734939575,
+        1.5206423997879028
+      ]
+    },
+    {
+      "shot": "EP2_Camera_cuidado_3",
+      "frames": [
+        2020,
+        2037,
+        2054,
+        2068
+      ],
+      "mean_absolute_pixel_changes": [
+        1.8005034923553467,
+        1.769108772277832,
+        1.706938624382019
+      ]
+    },
+    {
+      "shot": "EP2_Camera_cuidado_4",
+      "frames": [
+        2089,
+        2107,
+        2125,
+        2140
+      ],
+      "mean_absolute_pixel_changes": [
+        1.9371354579925537,
+        1.8665740489959717,
+        1.6442360877990723
+      ]
+    },
+    {
+      "shot": "EP2_Camera_cuidado_5",
+      "frames": [
+        2160,
+        2175,
+        2190,
+        2203
+      ],
+      "mean_absolute_pixel_changes": [
+        1.9736863374710083,
+        1.8018865585327148,
+        1.715509295463562
+      ]
+    },
+    {
+      "shot": "EP2_Camera_cuidado_6",
+      "frames": [
+        2226,
+        2251,
+        2276,
+        2295
+      ],
+      "mean_absolute_pixel_changes": [
+        1.9800809621810913,
+        1.9743865728378296,
+        1.5352083444595337
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_0",
+      "frames": [
+        2313,
+        2317,
+        2321,
+        2324
+      ],
+      "mean_absolute_pixel_changes": [
+        1.238877296447754,
+        1.2329167127609253,
+        1.6039235591888428
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_1",
+      "frames": [
+        2333,
+        2344,
+        2355,
+        2364
+      ],
+      "mean_absolute_pixel_changes": [
+        4.895717620849609,
+        4.652355194091797,
+        5.981278896331787
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_2",
+      "frames": [
+        2377,
+        2389,
+        2401,
+        2411
+      ],
+      "mean_absolute_pixel_changes": [
+        9.384276390075684,
+        4.052818298339844,
+        4.122569561004639
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_3",
+      "frames": [
+        2427,
+        2442,
+        2457,
+        2470
+      ],
+      "mean_absolute_pixel_changes": [
+        6.230908393859863,
+        6.037922382354736,
+        6.274739742279053
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_4",
+      "frames": [
+        2490,
+        2510,
+        2529,
+        2545
+      ],
+      "mean_absolute_pixel_changes": [
+        1.8585069179534912,
+        1.6158101558685303,
+        1.5479861497879028
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_5",
+      "frames": [
+        2562,
+        2571,
+        2580,
+        2587
+      ],
+      "mean_absolute_pixel_changes": [
+        3.9773783683776855,
+        3.213813543319702,
+        2.9577951431274414
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_6",
+      "frames": [
+        2599,
+        2610,
+        2620,
+        2629
+      ],
+      "mean_absolute_pixel_changes": [
+        4.959566116333008,
+        4.980260372161865,
+        4.640202522277832
+      ]
+    },
+    {
+      "shot": "EP2_Camera_encerramento_7",
+      "frames": [
+        2644,
+        2659,
+        2675,
+        2687
+      ],
+      "mean_absolute_pixel_changes": [
+        7.2072625160217285,
+        7.069178104400635,
+        7.134264945983887
+      ]
+    }
+  ],
+  "method": "Quatro amostras dentro de cada tomada; diferença absoluta RGB média em 320x180, sem incluir cortes",
+  "limitation": "Métrica demonstra variação visual, não substitui inspeção artística nem prova sincronização fonética"
+}

@@ -30,3 +30,5 @@ independentemente. Aceitação final exige as vozes e medição real de todos os
 Música/efeitos por síntese matemática local, sem samples externos. Volume ducked
 durante falas, loudness final verificado. Preservação por hashes inclui outputs do
 Episódio 01. Metadados YouTube preparados, publicação desabilitada.
+
+Continuação autorizada pelo usuário: alternativa gratuita local em pt-BR quando o Edge permanece bloqueado. Foram usadas vozes Kokoro assinadas, preservando os perfis Edge como referência, sem alegar identidade vocal Microsoft. O render integral foi concluído e validado; ver EPISODIO_02/RELATORIOS/ENTREGA.md.

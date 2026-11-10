@@ -1,0 +1,194 @@
+{
+  "method": "Correlação entre RMS de MP3 decodificado e abertura de boca baked na cena",
+  "limitation": "Verifica cadência/energia; não verifica visemas fonéticos",
+  "dialogue_checks": 37,
+  "minimum_correlation": 0.9553654056927179,
+  "measurements": [
+    {
+      "id": "01_02_capi",
+      "frames": 33,
+      "energy_mouth_correlation": 0.999999650344072
+    },
+    {
+      "id": "01_03_teco",
+      "frames": 33,
+      "energy_mouth_correlation": 0.9999927568541808
+    },
+    {
+      "id": "01_04_maya",
+      "frames": 48,
+      "energy_mouth_correlation": 0.9999947014777966
+    },
+    {
+      "id": "02_01_capi",
+      "frames": 39,
+      "energy_mouth_correlation": 0.9999996046445273
+    },
+    {
+      "id": "02_02_teco",
+      "frames": 45,
+      "energy_mouth_correlation": 0.9999917444348999
+    },
+    {
+      "id": "02_03_maya",
+      "frames": 48,
+      "energy_mouth_correlation": 0.9999920440271621
+    },
+    {
+      "id": "02_04_capi",
+      "frames": 41,
+      "energy_mouth_correlation": 0.999999736537088
+    },
+    {
+      "id": "02_05_teco",
+      "frames": 28,
+      "energy_mouth_correlation": 0.9999948482297187
+    },
+    {
+      "id": "02_06_maya",
+      "frames": 45,
+      "energy_mouth_correlation": 0.9999751963108203
+    },
+    {
+      "id": "03_02_teco",
+      "frames": 33,
+      "energy_mouth_correlation": 0.9999647614424947
+    },
+    {
+      "id": "03_03_teco",
+      "frames": 26,
+      "energy_mouth_correlation": 0.9553654056927179
+    },
+    {
+      "id": "03_04_capi",
+      "frames": 30,
+      "energy_mouth_correlation": 0.9999998206551824
+    },
+    {
+      "id": "03_05_teco",
+      "frames": 42,
+      "energy_mouth_correlation": 0.9999924715838735
+    },
+    {
+      "id": "03_06_maya",
+      "frames": 42,
+      "energy_mouth_correlation": 0.9999878045229147
+    },
+    {
+      "id": "04_01_capi",
+      "frames": 42,
+      "energy_mouth_correlation": 0.9999996808494221
+    },
+    {
+      "id": "04_02_teco",
+      "frames": 31,
+      "energy_mouth_correlation": 0.9999754957133825
+    },
+    {
+      "id": "04_03_maya",
+      "frames": 37,
+      "energy_mouth_correlation": 0.9999938499846182
+    },
+    {
+      "id": "04_05_maya",
+      "frames": 42,
+      "energy_mouth_correlation": 0.9999760891771081
+    },
+    {
+      "id": "04_06_capi",
+      "frames": 36,
+      "energy_mouth_correlation": 0.9999997710652873
+    },
+    {
+      "id": "05_01_teco",
+      "frames": 29,
+      "energy_mouth_correlation": 0.9999918562398121
+    },
+    {
+      "id": "05_02_capi",
+      "frames": 26,
+      "energy_mouth_correlation": 0.9999998374343747
+    },
+    {
+      "id": "05_03_maya",
+      "frames": 62,
+      "energy_mouth_correlation": 0.9999822843711008
+    },
+    {
+      "id": "05_04_teco",
+      "frames": 32,
+      "energy_mouth_correlation": 0.9999767255338258
+    },
+    {
+      "id": "05_05_maya",
+      "frames": 67,
+      "energy_mouth_correlation": 0.9999772246095047
+    },
+    {
+      "id": "05_06_capi",
+      "frames": 18,
+      "energy_mouth_correlation": 0.9999995399304303
+    },
+    {
+      "id": "05_07_maya",
+      "frames": 80,
+      "energy_mouth_correlation": 0.9999881684265223
+    },
+    {
+      "id": "05_08_teco",
+      "frames": 45,
+      "energy_mouth_correlation": 0.9999931544332958
+    },
+    {
+      "id": "06_01_capi",
+      "frames": 46,
+      "energy_mouth_correlation": 0.9999997407801435
+    },
+    {
+      "id": "06_02_maya",
+      "frames": 57,
+      "energy_mouth_correlation": 0.999990987553879
+    },
+    {
+      "id": "06_03_teco",
+      "frames": 33,
+      "energy_mouth_correlation": 0.9999883692648394
+    },
+    {
+      "id": "06_05_maya",
+      "frames": 53,
+      "energy_mouth_correlation": 0.999984490874209
+    },
+    {
+      "id": "07_01_capi",
+      "frames": 36,
+      "energy_mouth_correlation": 0.9999996831027085
+    },
+    {
+      "id": "07_02_teco",
+      "frames": 40,
+      "energy_mouth_correlation": 0.9999895701960982
+    },
+    {
+      "id": "07_03_maya",
+      "frames": 52,
+      "energy_mouth_correlation": 0.9999930621879205
+    },
+    {
+      "id": "07_05_capi",
+      "frames": 28,
+      "energy_mouth_correlation": 0.9999998674196077
+    },
+    {
+      "id": "07_06_teco",
+      "frames": 34,
+      "energy_mouth_correlation": 0.9999399570990614
+    },
+    {
+      "id": "07_07_maya",
+      "frames": 41,
+      "energy_mouth_correlation": 0.9999882307730268
+    }
+  ],
+  "passed": true
+}

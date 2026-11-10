@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "duration": 224.58333333333334,
+  "frames": 2695,
+  "speech_count": 44,
+  "render_width": 1920,
+  "export_width": 1920,
+  "loudness": {
+    "input_i": "-16.60",
+    "input_tp": "-1.43",
+    "input_lra": "7.80",
+    "input_thresh": "-27.69",
+    "output_i": "-16.05",
+    "output_tp": "-1.50",
+    "output_lra": "5.10",
+    "output_thresh": "-26.98",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "full_decode": "passed",
+  "black_and_freeze_detection": "passed",
+  "sha256": "3cac066af4c60385bec4c9cc0cd75f64e9eb9487a6d197b61dce44a4e7ece434"
+}

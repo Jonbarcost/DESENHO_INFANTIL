@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "command": "python3 -m producao.serie EPISODIO_02/ROTEIRO/roteiro.json --tts kokoro",
+  "result": "ALREADY_VERIFIED",
+  "sample_file_mtimes_unchanged": true
+}

@@ -1,5 +1,5 @@
 {
-  "completed": false,
+  "completed": true,
   "blocker": null,
   "config_edit": "Draft read failed twice with INVALID_ARGUMENT; no network change saved",
   "script_lines": 44,
@@ -15,15 +15,17 @@
   "tests_passed": 22,
   "preserved_files": 940,
   "valid_new_voices": 44,
-  "full_render": false,
-  "final_mix": false,
-  "final_mp4": false,
+  "full_render": true,
+  "final_mix": true,
+  "final_mp4": true,
   "published": false,
   "next_command": "python3 -m producao.serie EPISODIO_02/ROTEIRO/roteiro.json",
-  "phase": "rendering",
+  "phase": "validated",
   "voice_backend": "kokoro-local-pt-br",
-  "actual_duration": 224.5833333333,
+  "actual_duration": 224.58333333333334,
   "actual_frames": 2695,
   "windows_command": "EPISODIO_02\\produzir_windows.cmd",
-  "history": "Edge continuou bloqueado; alternativa local gratuita autorizada na continuação."
+  "history": "Edge continuou bloqueado; alternativa local gratuita autorizada na continuação.",
+  "video_sha256": "3cac066af4c60385bec4c9cc0cd75f64e9eb9487a6d197b61dce44a4e7ece434",
+  "windows_native_test": false
 }
