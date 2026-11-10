@@ -1,0 +1,16 @@
+{
+  "channel": "GitHub project delivery branch",
+  "repository_public": true,
+  "branch": "entrega-episodio-02",
+  "commit": "72a73c84c595fb338b0bd9e159bcd7fe45107b1d",
+  "file": "episodio_02_leve.mp4",
+  "bytes": 15038535,
+  "resolution": "1280x720",
+  "duration_seconds": 224.597007,
+  "url": "https://github.com/Jonbarcost/DESENHO_INFANTIL/raw/refs/heads/entrega-episodio-02/episodio_02_leve.mp4",
+  "page": "https://github.com/Jonbarcost/DESENHO_INFANTIL/blob/entrega-episodio-02/episodio_02_leve.mp4",
+  "http_status": 200,
+  "download_sha256": "8075ce41f76c8388125fa3378772255742da98f861f861c7cbbb56020bf7ed0a",
+  "full_download_verified": true,
+  "youtube_published": false
+}
