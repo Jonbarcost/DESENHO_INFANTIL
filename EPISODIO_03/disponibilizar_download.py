@@ -3,10 +3,17 @@ import hashlib,json,os,subprocess,tempfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def git(*args,env=None,data=None):return subprocess.check_output(['git',*map(str,args)],cwd=ROOT,env=env,input=data).decode().strip()
+def check_light(out,qa):
+ light=json.loads((out/'leve-validation.json').read_text())
+ assert (light.get('completed') and light.get('full_decode')=='passed' and light.get('audio_identical') is True
+         and light.get('source_sha256')==qa['sha256'] and light.get('sha256')==hashlib.sha256((out/'episodio_03_leve.mp4').read_bytes()).hexdigest()
+         and (light.get('width'),light.get('height'))==(1280,720)
+         and light.get('frames')==qa['frames'] and abs(light['duration']-qa['duration'])<.1),'Versão leve sem validação correspondente'
 def main():
  out=ROOT/'EPISODIO_03/ARTEFATOS';qa=json.loads((ROOT/'EPISODIO_03/RELATORIOS/validacao-final.json').read_text())
  files={'episodio_03_final.mp4':out/'episodio_03_final.mp4','episodio_03_leve.mp4':out/'episodio_03_leve.mp4','Clareira_Episodio03_Projeto.zip':ROOT/'build/Clareira_Episodio03_Projeto.zip'}
  assert qa['completed'] and hashlib.sha256(files['episodio_03_final.mp4'].read_bytes()).hexdigest()==qa['sha256']
+ check_light(out,qa)
  checksums={n:hashlib.sha256(p.read_bytes()).hexdigest() for n,p in files.items()}
  assert all(p.stat().st_size<100*2**20 for p in files.values()),'Arquivo supera limite de blob do GitHub'
  branch='entrega-episodio-03'
