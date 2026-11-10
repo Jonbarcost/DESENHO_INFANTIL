@@ -12,6 +12,7 @@ from producao.pipeline import validate_loudness
 from producao.render import valid_png
 from producao.timeline import probe
 from .historia import load_story, make_timeline, require_final
+from .portable import filter_path,bundled_font
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -36,9 +37,10 @@ def fingerprint(story_path,out,timeline,scene,width):
     files=list(Path(__file__).parent.glob('*.py'))+[ROOT/'producao/render.py',ROOT/'producao/animacao.py',
           ROOT/'EPISODIO_01/CENAS/personagens.blend',story_path,scene]
     if not timeline['provisional']:
-        files += [out/name for name in ('master.wav','legendas.srt','audio-report.json')]
+        files += [out/name for name in ('master.wav','legendas.srt','audio-report.json','voice-provider.json')]
     if not timeline['provisional']:files += [ROOT/c['path'] for c in timeline['dialogue']]
-    return dict(width=width,timeline=timeline,files={str(p.relative_to(ROOT)):sha(p) for p in files})
+    if not timeline['provisional']:files += [(ROOT/c['path']).with_suffix('.json') for c in timeline['dialogue']]
+    return dict(width=width,timeline=timeline,files={p.relative_to(ROOT).as_posix():sha(p) for p in files})
 
 
 def scene_path(story,out,draft):
@@ -52,21 +54,41 @@ def make_scene(story,t,out,width,draft):
          '--','--timeline',path,'--output',out,'--width',width],out/('layout.log' if draft else 'scene.log'))
 
 
-def generate_voices(story_path,episode,out):
-    python=sys.executable
-    if importlib.util.find_spec('edge_tts') is None:
-        python=ROOT/'.venv/bin/python'
-        if not python.is_file():raise RuntimeError('Instale producao/serie/requirements.txt no Python selecionado')
-    try:
-        run([python,'-m','producao.serie.vozes',story_path,out/'VOZES'],out/'tts.log')
-    except subprocess.CalledProcessError:
-        raise RuntimeError('Vozes não geradas. Consulte tts.log; libere speech.platform.bing.com se houver HTTP 403. Nenhum render final foi iniciado.') from None
+def venv_python(folder):
+    return folder/('Scripts/python.exe' if os.name=='nt' else 'bin/python')
+
+
+def generate_voices(story_path,episode,out,backend='auto'):
+    saved=out/'voice-provider.json'
+    if saved.exists() and backend not in ('auto',json.loads(saved.read_text())['backend']) and (out/'render-config.json').exists():
+        raise RuntimeError('Troca de provedor em produção preparada requer novo --output; arquivos existentes preservados.')
+    if backend=='auto' and saved.exists():backend=json.loads(saved.read_text())['backend']
+    if saved.exists() and backend==json.loads(saved.read_text())['backend']:
+        from .vozes import voice_context,cache_valid
+        from .historia import load_story
+        actual,folder=voice_context(load_story(story_path),out)
+        if all(cache_valid(folder/(c['id']+'.mp3'),c,actual['voices'][c['speaker']])
+               for s in actual['scenes'] for c in s['dialogue']):return
+    candidates=['edge','kokoro'] if backend=='auto' else [backend]
+    for selected in candidates:
+        module='edge_tts' if selected=='edge' else 'kokoro_onnx'
+        python=sys.executable if importlib.util.find_spec(module) else venv_python(ROOT/('.venv' if selected=='edge' else 'build/tts-local'))
+        if not Path(python).is_file():continue
+        folder=out/'VOZES'/selected
+        cmd=[python,'-m','producao.serie.'+('vozes' if selected=='edge' else 'local_voice'),story_path,folder]
+        if selected=='kokoro':cmd.append(ROOT/'build/tts-models')
+        try:run(cmd,out/f'tts_{selected}.log')
+        except subprocess.CalledProcessError:continue
+        saved.write_text(json.dumps(dict(backend=selected,exact_episode_one_voice=selected=='edge'),indent=2))
+        return
+    raise RuntimeError('Vozes não geradas. Consulte tts_edge.log/tts_kokoro.log. Edge requer rede; Kokoro requer os modelos locais verificados. Render final não iniciado.')
 
 
 def prepare(story_path,story,out,width):
-    from .vozes import collect
+    from .vozes import collect,voice_context
     from .audio import compose
-    t=make_timeline(story,collect(story,out/'VOZES',ROOT));require_final(t)
+    actual,folder=voice_context(story,out)
+    t=make_timeline(story,collect(actual,folder,ROOT));require_final(t)
     if any((out/'frames').glob('*.png')):
         raise RuntimeError('Cena já tem renders. Retome --stage render ou use outro --output antes de preparar nova versão.')
     make_scene(story,t,out,width,False);compose(t,ROOT,out,True)
@@ -107,11 +129,11 @@ def assemble(story,out,t,width):
     require_final(t)
     missing=[i for i in range(1,t['frames']+1) if not valid_png(out/'frames'/f'{i:04}.png',width,width*9//16)]
     if missing:raise RuntimeError(f'Quadros ausentes/inválidos: {len(missing)}')
-    font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-    (out/'title.txt').write_text(story['series']);(out/'episode.txt').write_text(story['title'])
+    font=bundled_font(ROOT)
+    (out/'title.txt').write_text(story['series'],encoding='utf-8');(out/'episode.txt').write_text(story['title'],encoding='utf-8')
     vf=['scale=1920:1080:flags=lanczos']
     for file,y,size in [('title.txt',65,46),('episode.txt',130,36)]:
-        vf.append(f"drawtext=fontfile='{font}':textfile='{out/file}':fontsize={size}:fontcolor=white:box=1:boxcolor=0x15362c@0.65:boxborderw=12:x=(w-text_w)/2:y={y}:enable='between(t,.5,6)'")
+        vf.append(f"drawtext=fontfile='{font}':textfile='{filter_path(out/file,ROOT)}':fontsize={size}:fontcolor=white:box=1:boxcolor=0x15362c@0.65:boxborderw=12:x=(w-text_w)/2:y={y}:enable='between(t,.5,6)'")
     vf.append('fade=t=in:st=0:d=0.5')
     for sc in t['scenes'][1:]:
         start=sc['start']
@@ -124,7 +146,17 @@ def assemble(story,out,t,width):
          '-c:v','libx264','-crf','18','-preset','fast','-threads','4','-pix_fmt','yuv420p','-c:a','aac',
          '-b:a','192k','-ar','48000','-c:s','mov_text','-metadata:s:a','language=por',
          '-metadata:s:s','language=por','-t',t['duration'],'-movflags','+faststart',tmp],out/'encode.log')
-    os.replace(tmp,out/(name+'.mp4'))
+    os.replace(tmp,out/(name.replace('_final','_candidate')+'.mp4'))
+
+
+def promote_verified(story,out,report):
+    candidate=out/f"episodio_{story['episode']}_candidate.mp4"
+    final=out/f"episodio_{story['episode']}_final.mp4"
+    source=candidate if candidate.exists() else final
+    if not report.get('completed') or not source.exists() or sha(source)!=report.get('sha256'):
+        raise ValueError('Candidato sem validação completa ou conteúdo alterado')
+    if candidate.exists():os.replace(candidate,final)
+    (out/'validation.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
 
 
 def preview(story,out):
@@ -139,7 +171,7 @@ def preview(story,out):
     manifest.write_text(signature)
     run(['blender','-b',scene,'-t','4','--python-exit-code','1','--python',ROOT/'producao/render.py',
          '--','--output',test,'--start',start,'--end',end],test/'render.log')
-    vf="scale=1280:720,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='TESTE VISUAL - SEM VOZES - TEMPOS ESTIMADOS':fontsize=22:fontcolor=white:box=1:boxcolor=black@0.6:x=(w-text_w)/2:y=24"
+    vf=f"scale=1280:720,drawtext=fontfile='{bundled_font(ROOT)}':text='TESTE VISUAL - SEM VOZES - TEMPOS ESTIMADOS':fontsize=22:fontcolor=white:box=1:boxcolor=black@0.6:x=(w-text_w)/2:y=24"
     run(['ffmpeg','-v','error','-y','-framerate',t['fps'],'-start_number',start,'-i',test/'frames/%04d.png',
          '-vf',vf,'-frames:v','48','-c:v','libx264','-threads','4','-pix_fmt','yuv420p',test/'teste_visual_sem_vozes.mp4'],test/'encode.log')
     run(['ffmpeg','-v','error','-i',test/'teste_visual_sem_vozes.mp4','-f','null','-'],test/'decode.log')
@@ -150,6 +182,8 @@ def main():
     p.add_argument('--stage',choices=['all','voices','layout','music','benchmark','preview','prepare','render','assemble','verify'],default='all')
     p.add_argument('--output',type=Path);p.add_argument('--width',type=int,choices=[1280,1920],default=1920)
     p.add_argument('--batch',type=int,default=120);p.add_argument('--start',type=int,default=1);p.add_argument('--end',type=int)
+    p.add_argument('--tts',choices=['auto','edge','kokoro'],default='auto')
+    p.add_argument('--preservation-manifest',type=Path)
     a=p.parse_args();path=a.story.resolve();story=load_story(path)
     episode=path.parent.parent;out=(a.output or episode/'ARTEFATOS').resolve()
     if ROOT not in out.parents:p.error('Saída deve ficar dentro do repositório')
@@ -157,10 +191,18 @@ def main():
                         (ROOT/'EPISODIO_01',ROOT/'build/episodio_01')):
         p.error('Saída não pode tocar no Episódio 01')
     if a.batch<1:p.error('--batch precisa ser positivo')
-    out.mkdir(parents=True,exist_ok=True);manifest=episode/'RELATORIOS/preservacao-inicial.json'
+    out.mkdir(parents=True,exist_ok=True);manifest=a.preservation_manifest or episode/'RELATORIOS/preservacao-inicial.json'
     try:
         if manifest.exists():preserve(manifest)
-        if a.stage in ('all','voices'):generate_voices(path,episode,out)
+        final=out/f"episodio_{story['episode']}_final.mp4";validation=out/'validation.json'
+        if a.stage=='all' and final.exists() and validation.exists() and not (out/f"episodio_{story['episode']}_candidate.mp4").exists():
+            previous=json.loads(validation.read_text())
+            if previous.get('completed') and previous.get('sha256')==sha(final):
+                check_config(path,story,out,a.width)
+                current=json.loads((out/'voice-provider.json').read_text())['backend']
+                if a.tts not in ('auto',current):raise RuntimeError('Novo provedor requer novo --output')
+                print('ALREADY_VERIFIED',final,flush=True);return
+        if a.stage in ('all','voices'):generate_voices(path,episode,out,a.tts)
         if a.stage=='all' and (out/'render-config.json').exists():t=check_config(path,story,out,a.width)
         elif a.stage in ('all','prepare'):t=prepare(path,story,out,a.width)
         elif a.stage in ('render','assemble','verify'):t=check_config(path,story,out,a.width)
@@ -177,7 +219,9 @@ def main():
         if a.stage in ('all','assemble'):assemble(story,out,t,a.width)
         if a.stage in ('all','verify'):
             from .qualidade import verify
-            verify(story,out,t,a.width)
+            report=verify(story,out,t,a.width)
+            if manifest.exists():preserve(manifest)
+            promote_verified(story,out,report)
         if manifest.exists():preserve(manifest)
         print('STAGE_DONE',a.stage,flush=True)
     except Exception as exc:

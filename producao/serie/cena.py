@@ -50,6 +50,15 @@ def configure(s,width,engine):
     s.eevee.taa_render_samples=8
 
 
+def butterfly_position(t,scenes):
+    travel=smooth(scenes['investigate']['start'],scenes['investigate']['end'],t)
+    # At the garden, stay at flower height so wings do not cover Maya's face.
+    center=Vector((-.8,-.4,1.95)).lerp(Vector((2.4,1.1,.83)),travel)
+    a=t*.45
+    return center+Vector(((1.2-.52*travel)*math.sin(a),(.8-.45*travel)*math.cos(a*.7),
+                          (.28-.18*travel)*math.sin(a*1.3)))
+
+
 def build(timeline,out,width=1920,engine='BLENDER_WORKBENCH'):
     bpy.ops.wm.open_mainfile(filepath=str(ROOT/'EPISODIO_01/CENAS/personagens.blend'))
     s=bpy.context.scene;configure(s,width,engine)
@@ -194,10 +203,7 @@ def build(timeline,out,width=1920,engine='BLENDER_WORKBENCH'):
             for brow,side in zip(r['brows'],(-1,1)):
                 brow.location.z=.47+.04*amp+.08*trip;brow.rotation_euler.y=side*(.08+.09*amp)
                 key(brow,'location',frame);key(brow,'rotation_euler',frame)
-        travel=smooth(scenes['investigate']['start'],scenes['investigate']['end'],t)
-        center=Vector((-.8,-.4,1.95)).lerp(Vector((2.4,1.1,1.25)),travel)
-        a=t*.45
-        pos=center+Vector(((1.2-.52*travel)*math.sin(a),(.8-.45*travel)*math.cos(a*.7),.28*math.sin(a*1.3)))
+        pos=butterfly_position(t,scenes)
         butterfly.location=pos;butterfly.scale=(.48,)*3;butterfly.rotation_euler=(.12*math.sin(t*1.3),.15*math.sin(t),.20*math.sin(t*.8))
         key(butterfly,'location',frame);key(butterfly,'rotation_euler',frame);key(butterfly,'scale',frame)
         for wing,side in wings:

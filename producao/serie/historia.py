@@ -22,7 +22,7 @@ def load_story(path):
 
 
 def voice_signature(line,profile):
-    data=dict(text=line['text'],profile=profile,client='edge-tts-7.2.7')
+    data=dict(text=line['text'],profile=profile,client=profile.get('client','edge-tts-7.2.7'))
     return hashlib.sha256(json.dumps(data,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
 
 

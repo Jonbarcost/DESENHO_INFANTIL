@@ -60,10 +60,23 @@ def collect(story,folder,root):
             samples=decode(path);block=round(RATE/story['fps'])
             values=[float(np.sqrt(np.mean(samples[j:j+block]**2))) for j in range(0,len(samples),block)]
             peak=max(values) or 1
-            result[line['id']]=dict(path=str(path.relative_to(root)),
+            result[line['id']]=dict(path=path.relative_to(root).as_posix(),
                                    duration=float(probe(path)['format']['duration']),
                                    envelope=[round(v/peak,4) for v in values])
     return result
+
+
+def voice_context(story,out):
+    """Keep approved Edge profiles intact; choose the actual provider's signed cache."""
+    config=Path(out)/'voice-provider.json'
+    if not config.exists():return story,Path(out)/'VOZES'
+    backend=json.loads(config.read_text())['backend']
+    if backend=='edge':profiles=story['voices']
+    elif backend=='kokoro':
+        from .local_voice import local_profile
+        profiles={name:local_profile(name,profile) for name,profile in story['voices'].items()}
+    else:raise ValueError('Provedor de voz desconhecido')
+    return {**story,'voices':profiles},Path(out)/'VOZES'/backend
 
 
 if __name__=='__main__':
