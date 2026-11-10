@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "blender": "Blender 4.3.2",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "cpu_quota": "400000 100000",
+  "mesa_threads": 4,
+  "engine": "BLENDER_WORKBENCH",
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "fps": 12,
+  "voices": "Kokoro offline pt-br; mesmos perfis do epis\u00f3dio anterior",
+  "disk_free": 48246685696
+}

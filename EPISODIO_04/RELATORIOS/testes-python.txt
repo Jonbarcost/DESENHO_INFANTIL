@@ -1,0 +1,39 @@
+test_real_encoder_produces_only_candidate_with_audio_subtitles_and_transitions (test_encode_integration.EncodingIntegrationTests.test_real_encoder_produces_only_candidate_with_audio_subtitles_and_transitions) ... ok
+test_portable_dispatch (test_gotinha.GotinhaTests.test_portable_dispatch) ... ok
+test_previous_destinations_and_story_rejected (test_gotinha.GotinhaTests.test_previous_destinations_and_story_rejected) ... ok
+test_script_has_real_response_pauses_and_science (test_gotinha.GotinhaTests.test_script_has_real_response_pauses_and_science) ... ok
+test_interrupted_zip_is_rejected_before_upload (test_gotinha_delivery.ProjectGate.test_interrupted_zip_is_rejected_before_upload) ... ok
+test_models_without_published_checksum_are_rejected (test_local_voice.LocalVoiceTests.test_models_without_published_checksum_are_rejected) ... ok
+test_profiles_keep_character_differences_and_provider_is_signed (test_local_voice.LocalVoiceTests.test_profiles_keep_character_differences_and_provider_is_signed) ... ok
+test_candidate_is_never_final_without_matching_validation (test_release_gate.ReleaseGateTests.test_candidate_is_never_final_without_matching_validation) ... ok
+test_prepared_production_rejects_provider_change_before_generation (test_release_gate.ReleaseGateTests.test_prepared_production_rejects_provider_change_before_generation) ... ok
+test_resume_rejects_truncated_corrupt_and_other_resolution (test_render.ResumeTests.test_resume_rejects_truncated_corrupt_and_other_resolution) ... ok
+test_episode_two_destination_rejected_before_writes (test_riacho.Riacho.test_episode_two_destination_rejected_before_writes) ... ok
+test_equals_destination_and_old_story_rejected (test_riacho.Riacho.test_equals_destination_and_old_story_rejected) ... ok
+test_import_has_no_pipeline_side_effects (test_riacho.Riacho.test_import_has_no_pipeline_side_effects) ... ok
+test_previous_production_preserved (test_riacho.Riacho.test_previous_production_preserved) ... ok
+test_story_education_and_safety (test_riacho.Riacho.test_story_education_and_safety) ... ok
+test_mobile_copy_bound_to_source_and_exact_bytes (test_riacho_delivery.Delivery.test_mobile_copy_bound_to_source_and_exact_bytes) ... ok
+test_wrong_source_or_unverified_copy_rejected (test_riacho_delivery.Delivery.test_wrong_source_or_unverified_copy_rejected) ... ok
+test_windows_and_linux_dispatch_to_same_episode_builder (test_riacho_delivery.PortablePaths.test_windows_and_linux_dispatch_to_same_episode_builder) ... ok
+test_duplicate_line_ids_are_rejected (test_serie.SeriesTests.test_duplicate_line_ids_are_rejected) ... ok
+test_external_output_is_rejected_before_work_starts (test_serie.SeriesTests.test_external_output_is_rejected_before_work_starts) ... ok
+test_final_requires_every_voice (test_serie.SeriesTests.test_final_requires_every_voice) ... ok
+test_measured_timeline_preserves_all_lines_and_gaps (test_serie.SeriesTests.test_measured_timeline_preserves_all_lines_and_gaps) ... ok
+test_output_cannot_be_the_episode_one_directory (test_serie.SeriesTests.test_output_cannot_be_the_episode_one_directory) ... ok
+test_overlong_measured_speech_is_not_silently_truncated (test_serie.SeriesTests.test_overlong_measured_speech_is_not_silently_truncated) ... ok
+test_planning_is_not_final_and_has_seven_scenes (test_serie.SeriesTests.test_planning_is_not_final_and_has_seven_scenes) ... ok
+test_planning_music_cannot_replace_final_mix_metadata (test_serie.SeriesTests.test_planning_music_cannot_replace_final_mix_metadata) ... ok
+test_voice_cache_rejects_tampering_and_profile_change (test_serie.SeriesTests.test_voice_cache_rejects_tampering_and_profile_change) ... ok
+test_voice_signature_tracks_text_and_approved_profile (test_serie.SeriesTests.test_voice_signature_tracks_text_and_approved_profile) ... ok
+test_all_twelve_clips_are_complete_and_separated (test_timeline.TimelineTests.test_all_twelve_clips_are_complete_and_separated) ... ok
+test_frame_zero_is_one_and_seconds_are_exact (test_timeline.TimelineTests.test_frame_zero_is_one_and_seconds_are_exact) ... ok
+test_missing_audio_does_not_silently_drop_dialogue (test_timeline.TimelineTests.test_missing_audio_does_not_silently_drop_dialogue) ... ok
+test_story_has_time_for_actions_and_goodbye (test_timeline.TimelineTests.test_story_has_time_for_actions_and_goodbye) ... ok
+test_resume_rejects_manually_edited_scene_and_timeline (test_validation.ExportValidationTests.test_resume_rejects_manually_edited_scene_and_timeline) ... ok
+test_true_peak_and_loudness_are_acceptance_checks (test_validation.ExportValidationTests.test_true_peak_and_loudness_are_acceptance_checks) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 12.498s
+
+OK

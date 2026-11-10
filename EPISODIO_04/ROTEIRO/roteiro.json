@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "episode": "04",
+  "title": "A Viagem da Gotinha",
+  "series": "Clareira dos Curiosos",
+  "fps": 12,
+  "target_duration": [
+    180,
+    300
+  ],
+  "render_width": 1920,
+  "voices": {
+    "CAPI": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+12%",
+      "pitch": "+15Hz"
+    },
+    "TECO": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "+22%",
+      "pitch": "+35Hz"
+    },
+    "MAYA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+8%",
+      "pitch": "+18Hz"
+    },
+    "NARRADORA": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+5%",
+      "pitch": "+5Hz"
+    }
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "Cadê a poça?",
+      "mode": "intro",
+      "min_duration": 29,
+      "dialogue": [
+        {
+          "id": "04_01_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "Depois de uma chuvinha, os amigos encontraram uma poça na clareira. Mais tarde, ela estava bem menor!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_01_02_capi",
+          "speaker": "CAPI",
+          "text": "Ué! Cadê o resto da água? Será que a poça saiu passear?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_01_03_teco",
+          "speaker": "TECO",
+          "text": "Eu não bebi! Minha garrafinha continua aqui!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_01_04_maya",
+          "speaker": "MAYA",
+          "text": "Vamos investigar. O sol está aquecendo a água e o chão.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_01_05_capi",
+          "speaker": "CAPI",
+          "text": "E você, curioso? Para onde acha que a água da poça foi?",
+          "pause_after": 3.5,
+          "event": "question"
+        },
+        {
+          "id": "04_01_06_narradora",
+          "speaker": "NARRADORA",
+          "text": "Observe com os amigos! Para descobrir, vamos imaginar a viagem de uma gotinha de água.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "title": "O sol aquece",
+      "mode": "discovery",
+      "min_duration": 30,
+      "dialogue": [
+        {
+          "id": "04_02_01_teco",
+          "speaker": "TECO",
+          "text": "Vou espiar de pertinho, mas sem pisar na poça. Não vejo a água subindo!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_02_02_maya",
+          "speaker": "MAYA",
+          "text": "É porque parte da água vira vapor de água, um gás invisível. Isso se chama evaporação.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_02_03_capi",
+          "speaker": "CAPI",
+          "text": "Invisível? Então não são bolinhas azuis voando de verdade?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_02_04_maya",
+          "speaker": "MAYA",
+          "text": "Isso! As setinhas do nosso desenho são uma representação. O vapor de água é invisível.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_02_05_narradora",
+          "speaker": "NARRADORA",
+          "text": "O calor do sol ajuda a água a evaporar. Não precisa ferver: poças e roupas molhadas também secam.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_02_06_teco",
+          "speaker": "TECO",
+          "text": "Achei a pista! A água da poça mudou de forma e foi para o ar!",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "chase",
+      "title": "Vamos subir na imaginação",
+      "mode": "chase",
+      "min_duration": 28,
+      "dialogue": [
+        {
+          "id": "04_03_01_capi",
+          "speaker": "CAPI",
+          "text": "Vamos imaginar nossa gotinha viajando com o ar? Braços para cima, bem devagar!",
+          "pause_after": 3.2,
+          "event": "stretch"
+        },
+        {
+          "id": "04_03_02_narradora",
+          "speaker": "NARRADORA",
+          "text": "Na nossa imaginação, a gotinha passeou pelo céu. Na natureza, o vapor invisível se mistura ao ar.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_03_03_teco",
+          "speaker": "TECO",
+          "text": "Uuuupa! Sou um explorador de nuvens! Mas meus pés continuam no chão!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_03_04_maya",
+          "speaker": "MAYA",
+          "text": "Quando o ar com vapor de água esfria, podem se formar gotinhas bem pequenas.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_03_05_capi",
+          "speaker": "CAPI",
+          "text": "Do vapor para as gotinhas? Essa mudança tem um nome?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_03_06_maya",
+          "speaker": "MAYA",
+          "text": "Tem, sim! Condensação. Vamos descobrir como essas gotinhas aparecem nas nuvens!",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "title": "Uma nuvem cheia de gotinhas",
+      "mode": "investigate",
+      "min_duration": 31,
+      "dialogue": [
+        {
+          "id": "04_04_01_teco",
+          "speaker": "TECO",
+          "text": "Parece um montão de algodão fofinho! Posso fazer um travesseiro?",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_04_02_maya",
+          "speaker": "MAYA",
+          "text": "É só parecido! Nuvens têm gotinhas minúsculas de água e também podem ter cristais de gelo.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_04_03_narradora",
+          "speaker": "NARRADORA",
+          "text": "Muitas gotinhas e cristais juntos tornam a nuvem visível. Uma gotinha sozinha é muito pequenininha.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_04_04_capi",
+          "speaker": "CAPI",
+          "text": "Curiosos, qual é invisível: o vapor de água ou a nuvem?",
+          "pause_after": 3.5,
+          "event": "question"
+        },
+        {
+          "id": "04_04_05_maya",
+          "speaker": "MAYA",
+          "text": "O vapor de água! Já a nuvem pode ser vista porque tem muitas gotinhas ou cristais.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_04_06_teco",
+          "speaker": "TECO",
+          "text": "Mistério resolvido! Nuvem não é algodão, nem um saco cheio de água!",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "title": "A chuva chegou",
+      "mode": "garden",
+      "min_duration": 32,
+      "dialogue": [
+        {
+          "id": "04_05_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "Dentro das nuvens, as gotinhas podem se juntar e crescer. Quando ficam grandes o suficiente, caem como chuva.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_05_02_capi",
+          "speaker": "CAPI",
+          "text": "Olha a gota crescendo! E agora... plim! Ela está caindo!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_05_03_maya",
+          "speaker": "MAYA",
+          "text": "A água caindo das nuvens se chama precipitação. A chuva é um exemplo!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_05_04_teco",
+          "speaker": "TECO",
+          "text": "Vamos fazer uma chuva de brincadeira? Toque os dedinhos na palma da mão, bem de leve!",
+          "pause_after": 4,
+          "event": "rain_game"
+        },
+        {
+          "id": "04_05_05_capi",
+          "speaker": "CAPI",
+          "text": "Primeiro, chuvinha suave: plim, plim. Agora, mais gotinhas: plim, plim, plim!",
+          "pause_after": 3,
+          "event": "rain_game"
+        },
+        {
+          "id": "04_05_06_narradora",
+          "speaker": "NARRADORA",
+          "text": "Os amigos observaram a chuva abrigados, com um adulto por perto. Depois puderam voltar à clareira.",
+          "pause_after": 0.8
+        }
+      ]
+    },
+    {
+      "id": "care",
+      "title": "A água cuida da vida",
+      "mode": "care",
+      "min_duration": 29,
+      "dialogue": [
+        {
+          "id": "04_06_01_capi",
+          "speaker": "CAPI",
+          "text": "A chuva molhou a terra, e a poça está aparecendo outra vez!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_06_02_maya",
+          "speaker": "MAYA",
+          "text": "Parte da água entra no solo. Parte escorre para riachos e rios. As plantas também precisam de água.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_06_03_teco",
+          "speaker": "TECO",
+          "text": "Então a água faz uma viagem que pode continuar de novo e de novo!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_06_04_narradora",
+          "speaker": "NARRADORA",
+          "text": "Chamamos essa circulação da água pela natureza de ciclo da água. E nós podemos cuidar dela.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_06_05_maya",
+          "speaker": "MAYA",
+          "text": "Feche a torneira quando não estiver usando e mantenha o lixo longe da natureza.",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_06_06_capi",
+          "speaker": "CAPI",
+          "text": "Vamos lembrar juntos? O sol ajuda a água a evaporar. Depois vêm as nuvens e a chuva!",
+          "pause_after": 3.2,
+          "event": "question"
+        }
+      ]
+    },
+    {
+      "id": "finale",
+      "title": "A dança da gotinha",
+      "mode": "finale",
+      "min_duration": 30,
+      "dialogue": [
+        {
+          "id": "04_07_01_narradora",
+          "speaker": "NARRADORA",
+          "text": "Para celebrar a descoberta, os amigos inventaram uma dança. Você pode acompanhar no seu lugar, com espaço e cuidado!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_07_02_capi",
+          "speaker": "CAPI",
+          "text": "O sol aquece, a água vai mudar! Vapor invisível se mistura com o ar!",
+          "pause_after": 0.8,
+          "event": "chorus"
+        },
+        {
+          "id": "04_07_03_maya",
+          "speaker": "MAYA",
+          "text": "Esfria, faz gotinhas, a nuvem vai formar. As gotas crescem, e a chuva vai chegar!",
+          "pause_after": 0.8,
+          "event": "chorus"
+        },
+        {
+          "id": "04_07_04_teco",
+          "speaker": "TECO",
+          "text": "Plim, plim, plim! A água vai voltar! Cuidar da natureza é bom de praticar!",
+          "pause_after": 3.2,
+          "event": "chorus"
+        },
+        {
+          "id": "04_07_05_capi",
+          "speaker": "CAPI",
+          "text": "Hoje aprendemos evaporação, condensação e chuva. Até a próxima, curiosos!",
+          "pause_after": 0.8
+        },
+        {
+          "id": "04_07_06_maya",
+          "speaker": "MAYA",
+          "text": "Escutem! Quem está cantando lá nas árvores? Essa descoberta fica para a próxima aventura!",
+          "pause_after": 0.8
+        }
+      ]
+    }
+  ]
+}

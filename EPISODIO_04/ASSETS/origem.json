@@ -1,0 +1,14 @@
+[
+  {
+    "source": "EPISODIO_02/ARTEFATOS/episodio_02_final.blend",
+    "source_sha256": "4798a1747ede86e51634293ed222bafda91d57b3f59f95a89b6161a3c4965c28",
+    "file": "flores_reutilizadas.blend",
+    "objects": 66
+  },
+  {
+    "source": "EPISODIO_03/ARTEFATOS/episodio_03_final.blend",
+    "source_sha256": "d2f243f1c82b7f28d67832de3b8dd6622edb4a15db89a02eb175fe5616033701",
+    "file": "riacho_reutilizado.blend",
+    "objects": 26
+  }
+]
