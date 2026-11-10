@@ -1,1 +1,5 @@
 Revisão independente antes do render: corrigidos destino anterior com formato --output= e destino padrão, separação de cena provisória/final e verificação efetiva da boca. Cinco testes específicos passaram; 27 testes totais passaram. Revisão de retorno não identificou novos bloqueadores. Poses reais inspecionadas, câmeras de folha/peixe/sapo ajustadas antes do render. Versão inicial preservada em ARTEFATOS.
+
+Correção de foco da folha após início do render: só câmeras das inserções do modo chase foram ajustadas. Comparação exata de geometria, materiais, configurações, matrizes e câmera em quadros 1–600 e nas poses já renderizadas: 610 amostras equivalentes, somente a pose 769 mudou. Essa pose foi arquivada e regenerada; os demais quadros foram preservados. O checkpoint foi atualizado após a prova de equivalência. Fonte do builder e cena editável correspondem à correção. Nenhum episódio anterior foi alterado.
+
+Teste de montagem de 10 segundos com os quadros reais e áudio master: MP4 decodificado integralmente, duração 10.000 s. Prévia técnica permanece separada em ARTEFATOS/TESTE e não é a entrega final.

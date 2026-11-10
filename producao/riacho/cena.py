@@ -99,7 +99,8 @@ def build(timeline,out,width=1920,engine='BLENDER_WORKBENCH'):
             pos=position(speaker.title(),time);loc=pos+Vector((-1.3 if speaker!='TECO' else 1.3,-6.7,2.6));target=pos+Vector((0,0,1.17));lens=47
         if mode=='care':loc=Vector((3.8,-8.4,4));target=Vector((.55,-.25,.75));lens=43
         if mode=='chase' and (speaker=='NARRADORA' or index in (1,4)):
-            loc=Vector((.5,5.3,6));target=Vector((.7,2.8,.15));lens=48
+            leafx=-2.6+5.2*smooth(scenes['chase']['start'],scenes['chase']['end'],(time+end)/2)
+            loc=Vector((leafx+.5,5.3,6));target=Vector((leafx,channel(leafx),.15));lens=48
         if mode=='investigate' and index in (1,2):loc=Vector((2,5.7,2.5));target=Vector((1,channel(1),.22));lens=48
         if mode=='investigate' and index==4:loc=Vector((6.4,1.6,1.8));target=Vector((3.5,1.3,.4));lens=52
         name=f'EP3_Camera_{len(shotlist):02}';cam=shot_camera(name,loc,target,lens)
